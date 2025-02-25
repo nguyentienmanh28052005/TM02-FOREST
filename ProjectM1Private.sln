@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.Common", "CitrioN.Common.csproj", "{93dc7771-54ea-d964-cd54-b038efc04997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.UI.Panels", "CitrioN.UI.Panels.csproj", "{8352a41d-d2f8-b3c5-160f-9f3eeb630f2b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{0cde938d-2feb-07c9-86ea-f17aca27bff5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{638b3537-1853-101e-1491-67e528cb9d0d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.UI.Components", "CitrioN.UI.Components.csproj", "{5c7204b9-4c6f-b90d-42ad-54149a8240de}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.SettingsMenuCreator.Editor", "CitrioN.SettingsMenuCreator.Editor.csproj", "{d10ca594-0649-94e8-eed4-fea4f618a9d9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.SettingsMenuCreator", "CitrioN.SettingsMenuCreator.csproj", "{ade0ff8d-bd3c-2217-ad1f-66f700b30e49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.Common.Editor", "CitrioN.Common.Editor.csproj", "{19d20943-4744-1d3f-5604-1254129ffa98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.StyleProfileSystem", "CitrioN.StyleProfileSystem.csproj", "{7c2c9d92-15df-522c-a54d-2b3d71d624bf}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.StyleProfileSystem.UIToolkit", "CitrioN.StyleProfileSystem.UIToolkit.csproj", "{06966f49-ce8d-bc0a-7aec-f24bda5c343d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.UI.Components.Editor", "CitrioN.UI.Components.Editor.csproj", "{3a2c0a4d-9535-efe8-32bd-6151d00e9b7a}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.UI", "CitrioN.UI.csproj", "{69340990-7511-42d8-ddb1-9c4eaf0cbedb}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.UI.Components.UIToolkit", "CitrioN.UI.Components.UIToolkit.csproj", "{bcc1a2d3-60be-fb33-c46e-f94232a8cb3e}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.StyleProfileSystem.Editor", "CitrioN.StyleProfileSystem.Editor.csproj", "{f49aedb0-1337-f5c5-eb36-2e03032c9256}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93dc7771-54ea-d964-cd54-b038efc04997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93dc7771-54ea-d964-cd54-b038efc04997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8352a41d-d2f8-b3c5-160f-9f3eeb630f2b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8352a41d-d2f8-b3c5-160f-9f3eeb630f2b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0cde938d-2feb-07c9-86ea-f17aca27bff5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0cde938d-2feb-07c9-86ea-f17aca27bff5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{638b3537-1853-101e-1491-67e528cb9d0d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{638b3537-1853-101e-1491-67e528cb9d0d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5c7204b9-4c6f-b90d-42ad-54149a8240de}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5c7204b9-4c6f-b90d-42ad-54149a8240de}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d10ca594-0649-94e8-eed4-fea4f618a9d9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d10ca594-0649-94e8-eed4-fea4f618a9d9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ade0ff8d-bd3c-2217-ad1f-66f700b30e49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ade0ff8d-bd3c-2217-ad1f-66f700b30e49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19d20943-4744-1d3f-5604-1254129ffa98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19d20943-4744-1d3f-5604-1254129ffa98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7c2c9d92-15df-522c-a54d-2b3d71d624bf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7c2c9d92-15df-522c-a54d-2b3d71d624bf}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06966f49-ce8d-bc0a-7aec-f24bda5c343d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06966f49-ce8d-bc0a-7aec-f24bda5c343d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3a2c0a4d-9535-efe8-32bd-6151d00e9b7a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3a2c0a4d-9535-efe8-32bd-6151d00e9b7a}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69340990-7511-42d8-ddb1-9c4eaf0cbedb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69340990-7511-42d8-ddb1-9c4eaf0cbedb}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{bcc1a2d3-60be-fb33-c46e-f94232a8cb3e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{bcc1a2d3-60be-fb33-c46e-f94232a8cb3e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f49aedb0-1337-f5c5-eb36-2e03032c9256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f49aedb0-1337-f5c5-eb36-2e03032c9256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

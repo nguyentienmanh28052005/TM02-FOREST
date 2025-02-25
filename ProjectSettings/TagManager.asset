@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Map
+  - Enemy
+  - Skill
+  - Bound
+  - SlimeRangeFocus
+  - RangeCam
+  - ShoomVer2
+  - Trap
+  - CinemachineCamera
+  - RangeCamFlower
+  - Text
+  - Test
+  - CamTest
+  - SkillUlti
+  - SkipRound
+  - Coin
+  - Key
+  - HitRange
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - 
+  - TestA*
+  - Skill
+  - Enemy
+  - Player
+  - Range
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 3139503039
+    locked: 0
+  - name: Player
+    uniqueID: 447286529
+    locked: 0
+  - name: Canvas
+    uniqueID: 3407990351
+    locked: 0
+  - name: Map
+    uniqueID: 2973325361
+    locked: 0
+  - name: Skill
+    uniqueID: 2976656123
+    locked: 0
+  - name: Enemy
+    uniqueID: 2371775727
+    locked: 0
+  - name: Sun
+    uniqueID: 4122761855
+    locked: 0
+  - name: Canvas2
+    uniqueID: 327155451
+    locked: 0
+  - name: TextMeshPro
+    uniqueID: 311346267
+    locked: 0
+  - name: Trap
+    uniqueID: 1805019699
+    locked: 0
+  - name: UI
+    uniqueID: 3451707813
+    locked: 0
