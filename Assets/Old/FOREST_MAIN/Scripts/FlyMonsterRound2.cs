@@ -8,7 +8,7 @@ public class FlyMonsterRound2 : MonoBehaviour
     private int _horizontal = 1;
     private Animator _anim;
     private Rigidbody2D _rb;
-    private float _speed = 10f;
+    public float _speed = 10f;
 
     private void Start()
     {

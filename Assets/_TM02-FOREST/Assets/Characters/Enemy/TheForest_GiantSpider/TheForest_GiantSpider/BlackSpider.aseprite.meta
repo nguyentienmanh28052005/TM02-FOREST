@@ -1,0 +1,887 @@
+fileFormatVersion: 2
+guid: 3a25b51575b892a46a2a1b977bd131a4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638761311184267660
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: BlackSpider_Frame_0
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 109
+      width: 40
+      height: 24
+    spriteID: d84f07678c80c0b4b823e3aac17bad24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 109}
+  - name: BlackSpider_Frame_1
+    originalName: 
+    pivot: {x: 0.3846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 197
+      y: 109
+      width: 39
+      height: 23
+    spriteID: 26d7c73828495f949a1b8f8955cef8ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 197, y: 109}
+  - name: BlackSpider_Frame_2
+    originalName: 
+    pivot: {x: 0.3902439, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 109
+      width: 41
+      height: 24
+    spriteID: b91ecabc93979084395eaaf1d3c6c8be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 109}
+  - name: BlackSpider_Frame_3
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 109
+      width: 40
+      height: 24
+    spriteID: 6adf0e626c0d6ef4d88e7b523b66349b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 109}
+  - name: BlackSpider_Frame_4
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 149
+      y: 109
+      width: 40
+      height: 24
+    spriteID: e90827bccaa295e48ae7393ea251a1ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 109}
+  - name: BlackSpider_Frame_5
+    originalName: 
+    pivot: {x: 0.37209302, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 44
+      width: 43
+      height: 26
+    spriteID: b190be53e51ecaf48aa1339039d2da37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 44}
+  - name: BlackSpider_Frame_6
+    originalName: 
+    pivot: {x: 0.35, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 40
+      height: 32
+    spriteID: 39e983d659ee7754c95c52f4eeb966c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: BlackSpider_Frame_7
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 4
+      width: 39
+      height: 32
+    spriteID: b76d9e3c90669fc49bb8f6fc3135e2ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 4}
+  - name: BlackSpider_Frame_8
+    originalName: 
+    pivot: {x: 0.37209302, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 44
+      width: 43
+      height: 26
+    spriteID: 461300e2c0e613d4aae48030af637178
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 44}
+  - name: BlackSpider_Frame_9
+    originalName: 
+    pivot: {x: 0.4318182, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 4
+      width: 44
+      height: 26
+    spriteID: 0c1d0915e3b5e63419c7e8dc0e3d02a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 4}
+  - name: BlackSpider_Frame_10
+    originalName: 
+    pivot: {x: 0.4318182, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 4
+      width: 44
+      height: 26
+    spriteID: ccd722ff68c839846a27fc536dbe4349
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 4}
+  - name: BlackSpider_Frame_11
+    originalName: 
+    pivot: {x: 0.35897437, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 162
+      y: 78
+      width: 39
+      height: 18
+    spriteID: 6243d34f2b792db478a2348503f6412c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 162, y: 78}
+  - name: BlackSpider_Frame_12
+    originalName: 
+    pivot: {x: 0.35897437, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 209
+      y: 78
+      width: 39
+      height: 18
+    spriteID: 750efadedc416e1498729c6b60f61d31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 209, y: 78}
+  - name: BlackSpider_Frame_13
+    originalName: 
+    pivot: {x: 0.35897437, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 141
+      width: 39
+      height: 18
+    spriteID: 1ff807db3159775419da85092c125ad8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 141}
+  - name: BlackSpider_Frame_14
+    originalName: 
+    pivot: {x: 0.35897437, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 141
+      width: 39
+      height: 18
+    spriteID: 2d8efaebaab86604fb79d2c887327994
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 141}
+  - name: BlackSpider_Frame_15
+    originalName: 
+    pivot: {x: 0.35897437, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 98
+      y: 141
+      width: 39
+      height: 18
+    spriteID: 8f3a14d7568d0db46adf30ede2b8d254
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 98, y: 141}
+  - name: BlackSpider_Frame_16
+    originalName: 
+    pivot: {x: 0.35897437, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 145
+      y: 141
+      width: 39
+      height: 18
+    spriteID: 46f394278a2aff14482fade783be2f04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 145, y: 141}
+  - name: BlackSpider_Frame_17
+    originalName: 
+    pivot: {x: 0.35897437, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 141
+      width: 39
+      height: 18
+    spriteID: 460f81767913aa345b213f47485f4dce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 192, y: 141}
+  - name: BlackSpider_Frame_18
+    originalName: 
+    pivot: {x: 0.32500002, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 44
+      width: 40
+      height: 26
+    spriteID: 5cc8c2823082ee44f802047baf5be578
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 158, y: 44}
+  - name: BlackSpider_Frame_19
+    originalName: 
+    pivot: {x: 0.3076923, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 44
+      width: 39
+      height: 26
+    spriteID: 0f2030a0062206a41bd4bca5a44c2e92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 44}
+  - name: BlackSpider_Frame_20
+    originalName: 
+    pivot: {x: 0.4318182, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 203
+      y: 4
+      width: 44
+      height: 26
+    spriteID: b07e461c2dfc3954eb11cb0bab282824
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 203, y: 4}
+  - name: BlackSpider_Frame_21
+    originalName: 
+    pivot: {x: 0.4318182, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 44
+      height: 26
+    spriteID: 5c9cc9988ba2c4c4db42e4f420cdc881
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: BlackSpider_Frame_22
+    originalName: 
+    pivot: {x: 0.45454547, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 78
+      width: 44
+      height: 23
+    spriteID: dee54bc1d56a3804ca05f6eae5c54976
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 78}
+  - name: BlackSpider_Frame_23
+    originalName: 
+    pivot: {x: 0.44444448, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 78
+      width: 45
+      height: 16
+    spriteID: c8b95c80a3fd9fd45a8032b0c6de08b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 78}
+  - name: BlackSpider_Frame_24
+    originalName: 
+    pivot: {x: 0.44444448, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 78
+      width: 45
+      height: 16
+    spriteID: 1472e98d28aa3cf41a9bfa54a5a14169
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 109, y: 78}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 224687140
+    name: BlackSpider
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BlackSpider_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 13
+        y: 0
+        width: 40
+        height: 24
+      spriteId: d84f07678c80c0b4b823e3aac17bad24
+    - name: BlackSpider_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 13
+        y: 0
+        width: 39
+        height: 23
+      spriteId: 26d7c73828495f949a1b8f8955cef8ad
+    - name: BlackSpider_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 12
+        y: 0
+        width: 41
+        height: 24
+      spriteId: b91ecabc93979084395eaaf1d3c6c8be
+    - name: BlackSpider_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 13
+        y: 0
+        width: 40
+        height: 24
+      spriteId: 6adf0e626c0d6ef4d88e7b523b66349b
+    - name: BlackSpider_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 13
+        y: 0
+        width: 40
+        height: 24
+      spriteId: e90827bccaa295e48ae7393ea251a1ff
+    - name: BlackSpider_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 12
+        y: 0
+        width: 43
+        height: 26
+      spriteId: b190be53e51ecaf48aa1339039d2da37
+    - name: BlackSpider_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 14
+        y: 0
+        width: 40
+        height: 32
+      spriteId: 39e983d659ee7754c95c52f4eeb966c9
+    - name: BlackSpider_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 15
+        y: 0
+        width: 39
+        height: 32
+      spriteId: b76d9e3c90669fc49bb8f6fc3135e2ee
+    - name: BlackSpider_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 12
+        y: 0
+        width: 43
+        height: 26
+      spriteId: 461300e2c0e613d4aae48030af637178
+    - name: BlackSpider_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 9
+        y: 0
+        width: 44
+        height: 26
+      spriteId: 0c1d0915e3b5e63419c7e8dc0e3d02a4
+    - name: BlackSpider_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 9
+        y: 0
+        width: 44
+        height: 26
+      spriteId: ccd722ff68c839846a27fc536dbe4349
+    - name: BlackSpider_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 14
+        y: 0
+        width: 39
+        height: 18
+      spriteId: 6243d34f2b792db478a2348503f6412c
+    - name: BlackSpider_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 14
+        y: 0
+        width: 39
+        height: 18
+      spriteId: 750efadedc416e1498729c6b60f61d31
+    - name: BlackSpider_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 14
+        y: 0
+        width: 39
+        height: 18
+      spriteId: 1ff807db3159775419da85092c125ad8
+    - name: BlackSpider_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 14
+        y: 0
+        width: 39
+        height: 18
+      spriteId: 2d8efaebaab86604fb79d2c887327994
+    - name: BlackSpider_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 14
+        y: 0
+        width: 39
+        height: 18
+      spriteId: 8f3a14d7568d0db46adf30ede2b8d254
+    - name: BlackSpider_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 14
+        y: 0
+        width: 39
+        height: 18
+      spriteId: 46f394278a2aff14482fade783be2f04
+    - name: BlackSpider_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 14
+        y: 0
+        width: 39
+        height: 18
+      spriteId: 460f81767913aa345b213f47485f4dce
+    - name: BlackSpider_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 15
+        y: 0
+        width: 40
+        height: 26
+      spriteId: 5cc8c2823082ee44f802047baf5be578
+    - name: BlackSpider_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 16
+        y: 0
+        width: 39
+        height: 26
+      spriteId: 0f2030a0062206a41bd4bca5a44c2e92
+    - name: BlackSpider_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 9
+        y: 0
+        width: 44
+        height: 26
+      spriteId: b07e461c2dfc3954eb11cb0bab282824
+    - name: BlackSpider_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 9
+        y: 0
+        width: 44
+        height: 26
+      spriteId: 5c9cc9988ba2c4c4db42e4f420cdc881
+    - name: BlackSpider_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 8
+        y: 0
+        width: 44
+        height: 23
+      spriteId: dee54bc1d56a3804ca05f6eae5c54976
+    - name: BlackSpider_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 8
+        y: 0
+        width: 45
+        height: 16
+      spriteId: c8b95c80a3fd9fd45a8032b0c6de08b0
+    - name: BlackSpider_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 8
+        y: 0
+        width: 45
+        height: 16
+      spriteId: 1472e98d28aa3cf41a9bfa54a5a14169
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 1
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 56, y: 34}

@@ -48,9 +48,9 @@
     <Compile Include="Assets\Old\2DWater\Cainos\Pixel Art Platformer - Village Props\Script\MovingPlatform.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1_state1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\OpenDoor.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_IdleState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HorizontalLineAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Shoom_State1.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\TestStatePatten\IState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Shoom.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SaveDataPlayer.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\PropertyGroupAttribute.cs" />
@@ -65,10 +65,14 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\OffCam.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Destroy.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\BlockquoteAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_WalkState.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Managers\GameResultManager.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\TitleHeaderAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\IObserver.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkillWatterBall.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ValidateInputAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\MovingState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\PropertyOrderAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CellingTrap.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\LabelWidthAttribute.cs" />
@@ -81,82 +85,80 @@
     <Compile Include="Assets\State Machine\States\RunState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\EnegyBar.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\VanishState1.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossShadow1_Manager.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\SectionHeaderAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BulletMushroomController.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Enum.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Fall.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Coin.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Managers\SceneController.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\AssetsOnlyAttribute.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxIfAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\PlayerNarrationSystem.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\IndentAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Rat.cs" />
     <Compile Include="Assets\CameraTarget.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DamageFlash.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\TestStatePatten\IdleState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HorizontalGroupAttribute.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\FoldoutGroupAttribute.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\BoxGroupAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\FallingSpike.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Pixel Art Platformer - Village Props\Script\Chest.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Managers\LoadingScenceController.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\PlayerShade.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\Subject.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\RatState1.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\TestStatePatten\PlayerControllerTestStatePatten.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\TestObserver\PlayerNarrationSystem.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Attack1.cs" />
     <Compile Include="Assets\State Machine\Modules\StateMachine.cs" />
     <Compile Include="Assets\Old\2DWater\Code\Water.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CollisionControllerSkillFire1Impact.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SelectRoundManager.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_AttackState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1_state2.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\UI\Others\DefineValue.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SetActiveFalse.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\EnableIfAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\IdleState.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_AttackState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1_death.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Common\Script\Utils\SecondOrderDynamics.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_IdleState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ParallaxEffect.cs" />
     <Compile Include="Assets\CanvasStartGame.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\UIController.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Controllers\Player\Hooded_Controller.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ShieldSkeleton.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound2_state1.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\TabGroupAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SetEnemy.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ParticleEffect.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\UI\Canvas\CanvasBase.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\HashashinAttack3.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideIfAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CoreControllerSkill.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\RequiredAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\PlayerAction.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound2Main.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\StartGame.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\OnValueChangedAttribute.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Enemy\IEnemy.cs" />
     <Compile Include="Assets\State Machine\States\AirState.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\StateManager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ShoomHealth.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Player\Hooded_Controller.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DataSkillBoss1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Bomb.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DeathBossRound2.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowIfAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Sound.cs" />
     <Compile Include="Assets\State Machine\States\PatrolState.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Managers\GameResultManager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SlimeState1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Pendulum.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Controllers\Enemy\BossShadow1_Manager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Dash.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Mushroom1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DonDestroy.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\PlayerControllerTestStatePatten.cs" />
     <Compile Include="Assets\State Machine\States\IdleState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\EnemyHealthBossRound2.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Key.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\TestStatePatten\StateManager.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\IEnemy.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\InputManager.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\GUIColorAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Boss.cs" />
@@ -164,7 +166,9 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Vanish.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideLabelAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CollisionController.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\IState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Spin.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Managers\SceneController.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideMonoScript.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowInInspectorAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SlimeHealth.cs" />
@@ -180,40 +184,36 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1.cs" />
     <Compile Include="Assets\State Machine\Modules\State.cs" />
     <Compile Include="Assets\State Machine\States\KneelState.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\TestStatePatten\MovingState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ButtonAttribute.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Managers\GameCanvasManager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BaseButton.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkillFire1.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\TestObserver\IObserver.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\VanishHealth.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\TestObserver\PlayerAction.cs" />
     <Compile Include="Assets\HelperLevel.cs" />
     <Compile Include="Assets\State Machine\Modules\Core.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableLucidEditorAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Managers\GameCanvasManager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SlimeState2.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Fly.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkillFireUlti.cs" />
     <Compile Include="Assets\State Machine\Entities\PlayerMovement.cs" />
     <Compile Include="Assets\State Machine\Modules\GroundSensor.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Pixel Art Platformer - Village Props\Script\BoundingPlatform.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\UI\Others\DefineValue.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1Attack.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SceneO.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\State Machine\Entities\NPC.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_WalkState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossUlti.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DataSkill.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CameraShake.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Flower.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Pixel Art Platformer - Village Props\Script\Elevator.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\TestObserver\Subject.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Managers\LoadingScenceController.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SavingFile.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\GroupAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Attack.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\FootStepManage.cs" />
-    <Compile Include="Assets\_TM01-FOREST\Scripts\UI\Canvas\CanvasBase.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SwipeMenu.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkeletonState1.cs" />
     <None Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\License.txt" />
@@ -276,7 +276,7 @@
     <None Include="Packages\com.citrion.ui\package.json" />
     <None Include="Assets\InventoryEngine\InventoryEngine\readme.txt" />
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\USS\Menu\Content\Menu_SettingsParent_ScrollView_Background.uss" />
-    <None Include="Assets\_TM01-FOREST\Assets\Environment\Free-Top-Down-Pixel-Art-Cave-Objects\License.txt" />
+    <None Include="Assets\_TM02-FOREST\Assets\Environment\Packs\Free-Top-Down-Pixel-Art-Cave-Objects\License.txt" />
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\USS\TabMenu\TabMenu_TabsContainer_Width_15%.txt" />
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\USS\Elements\Slider\Slider_NoBorders.uss" />
     <None Include="Packages\com.citrion.settings-menu-creator\Content\Sprites\Desert\Credits.txt" />
@@ -303,7 +303,7 @@
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\USS\InputElement\OnFocusedElement\Background-1\InputElement_OnFocused_Element_Background-1_Gradient.uss" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Packages\com.citrion.settings-menu-creator\Credits.txt" />
-    <None Include="Assets\_TM01-FOREST\Assets\Environment\Free-Top-Down-Pixel-Art-Cave-Objects\readme.txt" />
+    <None Include="Assets\_TM02-FOREST\Assets\Environment\Packs\Free-Top-Down-Pixel-Art-Cave-Objects\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Old\2DWater\CitrioN\Flowers\Pixel Art Flower Pack\Pixel Art Flower Pack\Pixel Art Flower Pack - Read Me.txt" />
     <None Include="Packages\com.citrion.common\UI Toolkit\UXML\DocumentationDataList\DocumentationDataListItem.uxml" />
@@ -316,7 +316,7 @@
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\USS\InputElement\Base\InputElement.uss" />
     <None Include="Packages\com.citrion.settings-menu-creator\Content\ScriptableObjects\ManagerWindow\UI Toolkit\UXML\Tabs\ManagerTabContent_Setup.uxml" />
     <None Include="Packages\com.citrion.settings-menu-creator\package.json" />
-    <None Include="Assets\_TM01-FOREST\Assets\Environment\Game-Asset-Art-Carol-Salvato\Game-Asset-Carol-Salvato\license.txt" />
+    <None Include="Assets\_TM02-FOREST\Assets\Environment\Packs\Game-Asset-Art-Carol-Salvato\Game-Asset-Carol-Salvato\license.txt" />
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\USS\Elements\Toggle\Toggle_Rounded_5px.uss" />
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\UXML\Menu\Overlays\Overlays.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
@@ -329,7 +329,7 @@
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\UXML\Menu\Content\Menu_Basic_2Containers.uxml" />
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\UXML\Elements\Label\Label.uxml" />
     <None Include="Packages\com.citrion.common\package.json" />
-    <None Include="Assets\_TM01-FOREST\Assets\Environment\Game-Asset-Art-Carol-Salvato\license.txt" />
+    <None Include="Assets\_TM02-FOREST\Assets\Environment\Packs\Game-Asset-Art-Carol-Salvato\license.txt" />
     <None Include="Packages\com.citrion.settings-menu-creator\Content\UI Toolkit\USS\Menu\Content\Menu_SettingsParent_ScrollView_MinWidth_50%.uss" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\InventoryEngine\InventoryEngine\license.txt" />
@@ -620,52 +620,52 @@
       <HintPath>D:\unity\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Reflection.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Reflection.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="DemiLib">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization.Config">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.OdinInspector.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.OdinInspector.Attributes">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenPro">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="RainbowHierarchy">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Borodar\RainbowHierarchy\Assemblies\RainbowHierarchy.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Borodar\RainbowHierarchy\Assemblies\RainbowHierarchy.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.OdinValidator.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinValidator.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinValidator.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\unity\2022.3.24f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -1049,238 +1049,238 @@
       <HintPath>D:\unity\2022.3.24f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Path.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Aseprite.Common">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Formats.Fbx.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Formats.Fbx.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Formats.Fbx.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="PPv2URPConverters">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Aseprite.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Sequences">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Sequences.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Sequences.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder.Base">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Addressables.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Autodesk.Fbx.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Addressables">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Sequences.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Sequences.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Sequences.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ResourceManager">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Formats.Fbx.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Formats.Fbx.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Formats.Fbx.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Formats.Alembic.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Formats.Alembic.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Formats.Alembic.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Autodesk.Fbx">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Formats.Alembic.Runtime">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Formats.Alembic.Runtime.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Formats.Alembic.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Play.Publisher.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.Play.Publisher.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.Play.Publisher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>E:\Downloads\TM02-FOREST\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>E:\Unity\My Project\Main\TM02-FOREST\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
