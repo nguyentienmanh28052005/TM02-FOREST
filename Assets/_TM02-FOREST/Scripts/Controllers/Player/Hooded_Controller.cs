@@ -84,6 +84,10 @@ public class Hooded_Controller : Subject
                 StartCoroutine(Dash());
         }
         isGrounds = isGrounded();
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            TakeDamage();
+        }
 
     }
     
@@ -270,7 +274,12 @@ public class Hooded_Controller : Subject
         canDash = true;
 
     }
-    
+
+
+    public void TakeDamage()
+    {
+        _rb.AddForce(Vector2.left * 2000f);
+    }
 
     
     
@@ -289,4 +298,5 @@ public class Hooded_Controller : Subject
     {
         Gizmos.DrawWireCube(transform.position-transform.up * castDistance, boxSize);
     }
+    
 }

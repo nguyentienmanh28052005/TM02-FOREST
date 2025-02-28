@@ -92,3 +92,18 @@ TagManager:
   - name: UI
     uniqueID: 3451707813
     locked: 0
+  - name: BackGround1
+    uniqueID: 3862070673
+    locked: 0
+  - name: BackGround2
+    uniqueID: 1705469511
+    locked: 0
+  - name: BackGround3
+    uniqueID: 3711481859
+    locked: 0
+  - name: BackGround4
+    uniqueID: 1689926747
+    locked: 0
+  - name: BackGround5
+    uniqueID: 1860943181
+    locked: 0

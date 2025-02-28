@@ -6,7 +6,14 @@ using Vector3 = System.Numerics.Vector3;
 public class Hooded_ParticleEffect : MonoBehaviour
 {
     [SerializeField] private ParticleSystem PS;
+    [SerializeField] private GameObject _playerPos;
     private Hooded_Controller _player;
+
+
+    public void Update()
+    {
+        transform.localScale = new(-_playerPos.transform.localScale.x, _playerPos.transform.localScale.y, _playerPos.transform.localScale.z);
+    }
 
     public void PlayParticle(float time)
     {

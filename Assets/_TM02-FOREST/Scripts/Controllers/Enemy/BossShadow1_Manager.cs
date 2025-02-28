@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 [RequireComponent(typeof(StateManager))]
@@ -8,14 +9,18 @@ public class BossShadow1_Manager : Subject
 {
     [SerializeField] private StateManager _stateManager;
     [SerializeField] private GameObject _player;
-    private bool _isFacingRight = false;
+    private bool _isFacingRight = true;
     private Animator _anim;
-    private int _horizontal = -1;
+    private int _horizontal = 1;
     public float _speed = 1f;
     private Rigidbody2D _rb;
     public static float speed;
     public static string _currentState;
     private bool _isAttack;
+
+    [SerializeField] private GameObject _firePos;
+    [SerializeField] GameObject _bullet;
+    [SerializeField] private GameObject _ice;
     public void Start()
     {
         _stateManager = GetComponent<StateManager>();
@@ -61,9 +66,9 @@ public class BossShadow1_Manager : Subject
     {
         _rb.velocity = new Vector2(0, 0);
         _stateManager.ChangeState(new BossShadow1_IdleState(this, _anim));
-        yield return new WaitForSeconds(3f);
-        Flip();
         yield return new WaitForSeconds(1f);
+        Flip();
+        // yield return new WaitForSeconds(1f);
         StartCoroutine(Attack1());
         yield return new WaitForSeconds(2f);
         _stateManager.ChangeState(new BossShadow1_WalkState(this, _anim));
@@ -81,7 +86,8 @@ public class BossShadow1_Manager : Subject
         _stateManager.ChangeState(new BossShadow1_WalkState(this, _anim));
     }
 
-
+    
+    
     public IEnumerator Attack1()
     {
         _isAttack = true;
@@ -89,7 +95,30 @@ public class BossShadow1_Manager : Subject
         yield return new WaitForSeconds(2f);
         _isAttack = false;
     }
-    
+
+    public void InstanceBullet()
+    {
+        StartCoroutine( WaitInstanceBullet(0.3f));
+    }
+
+
+    public IEnumerator WaitInstanceBullet(float time)
+    {
+        yield return new WaitForSeconds(time);
+        GameObject bullet = Instantiate(_bullet, _firePos.transform.position, transform.rotation);
+        bullet.transform.localScale = transform.localScale;
+    }
+
+    public void InstanceIce()
+    {
+        StartCoroutine(WaitInstanceIce(1f));
+    }
+
+    public IEnumerator WaitInstanceIce(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Instantiate(_ice, new Vector3(_player.transform.position.x, -23.6f, 0), transform.rotation);
+    }
     
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -102,5 +131,7 @@ public class BossShadow1_Manager : Subject
             StartCoroutine(Attack2());
         }
     }
+
+    
     
 }
