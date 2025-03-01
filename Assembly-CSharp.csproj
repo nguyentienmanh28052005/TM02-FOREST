@@ -78,6 +78,7 @@
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\LabelWidthAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ShoomWalk.cs" />
     <Compile Include="Assets\State Machine\States\CollectState.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossCrystal\BossCrystal_MoveState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableInPlayModeAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkillWater1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Taget.cs" />
@@ -85,7 +86,6 @@
     <Compile Include="Assets\State Machine\States\RunState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\EnegyBar.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\VanishState1.cs" />
-    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossShadow1_Manager.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\SectionHeaderAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BulletMushroomController.cs" />
@@ -99,11 +99,11 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Rat.cs" />
     <Compile Include="Assets\CameraTarget.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DamageFlash.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossShadow1\BossShadow1_Manager.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HorizontalGroupAttribute.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\FoldoutGroupAttribute.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\BoxGroupAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\FallingSpike.cs" />
-    <Compile Include="Assets\BossCrystal_Manager.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Pixel Art Platformer - Village Props\Script\Chest.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\PlayerShade.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ReadOnlyAttribute.cs" />
@@ -117,6 +117,7 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1_state2.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SetActiveFalse.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\EnableIfAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossShadow1\BossShadow1_Attack2_Controller.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\IdleState.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_AttackState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1_death.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound2Main.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\StartGame.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\OnValueChangedAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossCrystal\BossCrystal_AttackState.cs" />
     <Compile Include="Assets\State Machine\States\AirState.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\StateManager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\AudioManager.cs" />
@@ -173,6 +175,7 @@
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideMonoScript.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowInInspectorAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SlimeHealth.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossShadow1\BossShadow1_Attack1_Controller.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Slime.cs" />
     <Compile Include="Assets\State Machine\States\NavigateState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\FlyMonsterRound2.cs" />
@@ -186,14 +189,15 @@
     <Compile Include="Assets\State Machine\Modules\State.cs" />
     <Compile Include="Assets\State Machine\States\KneelState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ButtonAttribute.cs" />
-    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossShadow1_Attack1_Controller.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BaseButton.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkillFire1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\VanishHealth.cs" />
     <Compile Include="Assets\HelperLevel.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossShadow1\BossShadow1_Attack1_Hit.cs" />
     <Compile Include="Assets\State Machine\Modules\Core.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableLucidEditorAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossCrystal\BossCrystal_Manager.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Managers\GameCanvasManager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SlimeState2.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Fly.cs" />
@@ -216,9 +220,7 @@
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\GroupAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Attack.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\FootStepManage.cs" />
-    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossShadow1_Attack1_Hit.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SwipeMenu.cs" />
-    <Compile Include="Assets\_TM02-FOREST\Scripts\Controllers\Enemy\BossShadow1_Attack2_Controller.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkeletonState1.cs" />
     <None Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\License.txt" />
     <None Include="Packages\com.citrion.settings-menu-creator\UI Toolkit\USS\Editors\Preferences_SettingsMenuCreator_Templates.uss" />

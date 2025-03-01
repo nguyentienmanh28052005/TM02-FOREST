@@ -1,0 +1,154 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.PackageManager.UI;
+using UnityEngine;
+
+[RequireComponent(typeof(StateManager))]
+public class BossCrystal_Manager : Subject
+{
+    [SerializeField] private StateManager _stateManager;
+    [SerializeField] private GameObject _player;
+    private bool _isFacingRight = false;
+    private Animator _anim;
+    private int _horizontal = -1;
+    public float _speed = 1f;
+    private Rigidbody2D _rb;
+    public static string _currentState;
+    private bool _isAttack;
+    
+    public Vector2 boxSize;
+    public float castDistance;
+    public LayerMask groundLayer;
+    
+    public float jumpHeight = 0.23f;
+    public float gravityScale;
+    public float fallGravityScale;
+    public bool onJump = false;
+
+    public bool isGround;
+    
+    private bool canAttack = true;
+    
+    [SerializeField] private GameObject _attack1;
+    [SerializeField] private CameraShake _cameraShake;
+    
+    public void Start()
+    {
+        _stateManager = GetComponent<StateManager>();
+        _rb = GetComponent<Rigidbody2D>();
+        _anim = GetComponentInChildren<Animator>();
+    }
+
+    public void Update()
+    {
+        isGround = isGrounded();
+        _anim.SetFloat("Speed", _speed);
+       // if(Input.GetKeyDown(KeyCode.Q)) LookAtPlayer();
+       if (Input.GetKeyDown(KeyCode.Q))
+       {
+           Jump();
+       }
+        Debug.Log(_isFacingRight);
+        Fall();
+        //if(_speed != 0f) _stateManager.ChangeState(new BossCrystal_MoveState(this, _anim));
+    }
+    
+    public void MoveForward()
+    {
+        if (_isFacingRight) _horizontal = 1;
+        else _horizontal = -1;
+        _rb.velocity = new Vector2(_horizontal, _rb.velocity.y);
+        transform.Translate(_rb.velocity * Time.deltaTime * _speed);
+    }
+    
+    public void LookAtPlayer()
+    {
+        if (transform.position.x - _player.transform.position.x > 0)
+        {
+            if(_isFacingRight) Flip();
+        }
+        else 
+            if(!_isFacingRight) Flip();
+    }
+
+    public void Flip()
+    {
+        Vector3 kich_thuoc = transform.localScale;
+        kich_thuoc.x = -1 * kich_thuoc.x;
+        transform.localScale = kich_thuoc;
+        _isFacingRight = !_isFacingRight;
+    }
+
+    private IEnumerator Attack1()
+    {
+        _anim.SetBool("Jump", false);
+        _anim.SetBool("Fall", false);
+        canAttack = false;
+        //_anim.SetTrigger("AttackAir");
+        yield return new WaitForSeconds(0.3f);
+        _rb.velocity = new Vector2(0, 0);
+        _attack1.SetActive(true);
+        _cameraShake.ShakeCamera(5f);
+        yield return new WaitForSeconds(0.5f); 
+        _attack1.SetActive(false);
+        Flip();
+        _anim.SetTrigger("AttackAir");
+        yield return new WaitForSeconds(0.3f);
+        _rb.velocity = new Vector2(0, 0);
+        _attack1.SetActive(true);
+        _cameraShake.ShakeCamera(5f);
+        yield return new WaitForSeconds(0.5f); 
+        _attack1.SetActive(false);
+        canAttack = true;
+        
+    }
+    
+    
+    void Jump()
+    {
+        //jumpHeight = 0.25f;
+        _anim.SetBool("Jump", true);
+        _rb.gravityScale = gravityScale;
+        float jumpForce = Mathf.Sqrt(jumpHeight * (Physics2D.gravity.y * _rb.gravityScale) * -2) * _rb.mass;
+        _rb.velocity = new Vector2(0f, 0f);
+        _rb.AddForce(new Vector2(transform.localScale.x,1 ) * jumpForce, ForceMode2D.Impulse);
+        if(_rb.velocity.y > 0) _rb.gravityScale = gravityScale;
+        else _rb.gravityScale = fallGravityScale;
+        if (_rb.velocity.y < -2f) _rb.velocity = new Vector2(_rb.velocity.x, -2f);
+    }
+
+    public void Fall()
+    {
+        if(_rb.velocity.y < -1f && _rb.velocity.y > -2f) _anim.SetBool("Fall", true);
+        if (isGround && _rb.velocity.y < -0.5f && canAttack) StartCoroutine(Attack1());
+    }
+    
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "HitRange")
+        {
+            Flip();
+        }
+        if (other.gameObject.tag == "Skill" && _currentState != "IdleState" && !_isAttack)
+        {
+        }
+    }
+
+    public bool isGrounded()
+    {
+        if(Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer)){
+            return true;
+        }
+        else 
+        {
+            return false;
+        }
+    }
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(transform.position-transform.up * castDistance, boxSize);
+    }
+    
+}
