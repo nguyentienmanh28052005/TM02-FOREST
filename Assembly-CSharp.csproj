@@ -52,6 +52,7 @@
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HorizontalLineAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Shoom_State1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Shoom.cs" />
+    <Compile Include="Assets\BossCrystal_Controller.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SaveDataPlayer.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\PropertyGroupAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossMove.cs" />

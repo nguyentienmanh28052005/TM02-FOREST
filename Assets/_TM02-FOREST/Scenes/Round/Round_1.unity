@@ -163465,6 +163465,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3252996984351961732, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
+      propertyPath: jumpHeight
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5681138666637538112, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_Name
       value: Hooded (1)
@@ -281512,6 +281516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PS: {fileID: 1669745023}
+  _playerPos: {fileID: 0}
 --- !u!199 &1669745022
 ParticleSystemRenderer:
   serializedVersion: 6

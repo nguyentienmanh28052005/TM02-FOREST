@@ -120,15 +120,10 @@ public class BossRound2Main : MonoBehaviour
         float originalGravity = _rb.gravityScale;
         _rb.gravityScale = 0f;
         _rb.velocity = new Vector2(_horizontal * dashingPower, 0f);
-        // tr.emitting = true;
-        //_particleDash.PlayParticle(timeParticleDash);
         yield return new WaitForSeconds(dashingTime);
-        // tr.emitting = false;
         _rb.gravityScale = originalGravity;
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
-        //_rb.sharedMaterial.friction = 0.01f;
         canDash = true;
-
     }
 }

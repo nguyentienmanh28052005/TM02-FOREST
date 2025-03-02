@@ -84,11 +84,7 @@ public class Hooded_Controller : Subject
                 StartCoroutine(Dash());
         }
         isGrounds = isGrounded();
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            TakeDamage();
-        }
-
+            
     }
     
     void FixedUpdate()
@@ -159,7 +155,7 @@ public class Hooded_Controller : Subject
         if (_horizontalInput != 0)
         {
             //if(isGrounded()) _footStep.OnAudioRun();
-            _speed = 9f;
+            _speed = 7f;
             _anim.SetFloat(_animIDSpeed, _speed);
         }
         if (Input.GetKey(KeyCode.LeftShift) && _horizontalInput != 0)
@@ -185,12 +181,12 @@ public class Hooded_Controller : Subject
                 if (doubleJump)
                 {
                     _particleJump.PlayParticle(timeParticleJump);
-                    jumpHeight = 0.4f;
+                    jumpHeight = 0.5f;
                     //_rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.5f);
                 }
                 else
                 {
-                    jumpHeight = 0.25f;
+                    jumpHeight = 0.3f;
                 }
                 StopCoroutine(AnimJump());
                 StartCoroutine(AnimJump());
@@ -275,11 +271,7 @@ public class Hooded_Controller : Subject
 
     }
 
-
-    public void TakeDamage()
-    {
-        _rb.AddForce(Vector2.left * 2000f);
-    }
+    
 
     
     

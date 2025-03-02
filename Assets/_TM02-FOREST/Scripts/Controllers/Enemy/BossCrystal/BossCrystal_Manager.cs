@@ -30,6 +30,12 @@ public class BossCrystal_Manager : Subject
     
     private bool canAttack = true;
     
+    private bool canDash = true;
+    private bool isDashing;
+    public float dashingPower;
+    public float dashingTime;
+    public float dashingCooldown;
+    
     [SerializeField] private GameObject _attack1;
     [SerializeField] private CameraShake _cameraShake;
     
@@ -44,12 +50,6 @@ public class BossCrystal_Manager : Subject
     {
         isGround = isGrounded();
         _anim.SetFloat("Speed", _speed);
-       // if(Input.GetKeyDown(KeyCode.Q)) LookAtPlayer();
-       if (Input.GetKeyDown(KeyCode.Q))
-       {
-           Jump();
-       }
-        Debug.Log(_isFacingRight);
         Fall();
         //if(_speed != 0f) _stateManager.ChangeState(new BossCrystal_MoveState(this, _anim));
     }
@@ -80,11 +80,12 @@ public class BossCrystal_Manager : Subject
         _isFacingRight = !_isFacingRight;
     }
 
-    private IEnumerator Attack1()
+    public IEnumerator Attack1()
     {
         _anim.SetBool("Jump", false);
         _anim.SetBool("Fall", false);
         canAttack = false;
+        Debug.Log("hi");
         //_anim.SetTrigger("AttackAir");
         yield return new WaitForSeconds(0.3f);
         _rb.velocity = new Vector2(0, 0);
@@ -101,11 +102,17 @@ public class BossCrystal_Manager : Subject
         yield return new WaitForSeconds(0.5f); 
         _attack1.SetActive(false);
         canAttack = true;
-        
+    }
+
+    public IEnumerator Attack2()
+    {
+        StartCoroutine(Dash());
+        _anim.SetTrigger("Attack4");
+        yield return new WaitForSeconds(1.2f);
+        Flip();
     }
     
-    
-    void Jump()
+    public void Jump()
     {
         //jumpHeight = 0.25f;
         _anim.SetBool("Jump", true);
@@ -118,10 +125,26 @@ public class BossCrystal_Manager : Subject
         if (_rb.velocity.y < -2f) _rb.velocity = new Vector2(_rb.velocity.x, -2f);
     }
 
+    public IEnumerator Dash()
+    {
+        _cameraShake.ShakeCamera(5f);
+        canDash = false;
+        isDashing = true;
+        float originalGravity = _rb.gravityScale;
+        _rb.gravityScale = 0f;
+        _rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        yield return new WaitForSeconds(dashingTime);
+        _rb.gravityScale = originalGravity;
+        _rb.velocity = new Vector2(0, 0);
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+    }
+
     public void Fall()
     {
-        if(_rb.velocity.y < -1f && _rb.velocity.y > -2f) _anim.SetBool("Fall", true);
-        if (isGround && _rb.velocity.y < -0.5f && canAttack) StartCoroutine(Attack1());
+        if(_rb.velocity.y < -2f && _rb.velocity.y > -3f) _anim.SetBool("Fall", true);
+        if (isGround && _rb.velocity.y < -2f && canAttack) StartCoroutine(Attack1());
     }
     
     public void OnTriggerEnter2D(Collider2D other)
