@@ -85,7 +85,6 @@ public class BossShadow1_Manager : Subject
         _isAttack = false;
         _stateManager.ChangeState(new BossShadow1_WalkState(this, _anim));
     }
-
     
     
     public IEnumerator Attack1()

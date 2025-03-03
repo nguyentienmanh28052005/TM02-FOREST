@@ -97,6 +97,7 @@
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxIfAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\PlayerNarrationSystem.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\IndentAttribute.cs" />
+    <Compile Include="Assets\BossCrystal_Attack5_Controller.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Rat.cs" />
     <Compile Include="Assets\CameraTarget.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DamageFlash.cs" />

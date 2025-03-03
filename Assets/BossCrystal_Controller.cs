@@ -5,23 +5,29 @@ using UnityEngine;
 public class BossCrystal_Controller : MonoBehaviour
 {
     [SerializeField] private BossCrystal_Manager _manager;
+    [SerializeField] private Transform _playerTrans;
     // Start is called before the first frame update
     void Start()
     {
         _manager = GetComponent<BossCrystal_Manager>();
+        _playerTrans = GameObject.FindWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // if(Input.GetKeyDown(KeyCode.Q)) LookAtPlayer();
-        if (Input.GetKeyDown(KeyCode.Q))
+        //Debug.Log(Mathf.Abs(transform.position.x - _playerTrans.position.x));
+        //if (Mathf.Abs(transform.position.x - _playerTrans.position.x) < 10f && BossCrystal_Manager.canAttack)
+        
+       if(Mathf.Abs(transform.position.x - _playerTrans.position.x) < 10f && Mathf.Abs(transform.position.x - _playerTrans.position.x) < 9f && !BossCrystal_Manager._busy)
         {
-            _manager.Jump();
+            //StartCoroutine(_manager.Attack2());
+            StartCoroutine(_manager.Attack1());
         }
+        
         if (Input.GetKeyDown(KeyCode.R))
         {
-            StartCoroutine(_manager.Attack2());
+            _manager.InstanceBullet();
         }
     }
 }

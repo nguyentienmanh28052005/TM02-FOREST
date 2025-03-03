@@ -12,7 +12,7 @@ public class BossCrystal_Manager : Subject
     private bool _isFacingRight = false;
     private Animator _anim;
     private int _horizontal = -1;
-    public float _speed = 1f;
+    public float _speed = 0f;
     private Rigidbody2D _rb;
     public static string _currentState;
     private bool _isAttack;
@@ -28,7 +28,7 @@ public class BossCrystal_Manager : Subject
 
     public bool isGround;
     
-    private bool canAttack = true;
+    public static bool _busy = false;
     
     private bool canDash = true;
     private bool isDashing;
@@ -38,6 +38,9 @@ public class BossCrystal_Manager : Subject
     
     [SerializeField] private GameObject _attack1;
     [SerializeField] private CameraShake _cameraShake;
+    
+    [SerializeField] private GameObject _firePos;
+    [SerializeField] GameObject _bullet;
     
     public void Start()
     {
@@ -51,7 +54,19 @@ public class BossCrystal_Manager : Subject
         isGround = isGrounded();
         _anim.SetFloat("Speed", _speed);
         Fall();
-        //if(_speed != 0f) _stateManager.ChangeState(new BossCrystal_MoveState(this, _anim));
+    }
+    
+    public void InstanceBullet()
+    {
+        StartCoroutine( WaitInstanceBullet(0.3f));
+    }
+
+
+    public IEnumerator WaitInstanceBullet(float time)
+    {
+        yield return new WaitForSeconds(time);
+        GameObject bullet = Instantiate(_bullet, _firePos.transform.position, transform.rotation);
+        bullet.transform.localScale = transform.localScale;
     }
     
     public void MoveForward()
@@ -82,18 +97,11 @@ public class BossCrystal_Manager : Subject
 
     public IEnumerator Attack1()
     {
-        _anim.SetBool("Jump", false);
-        _anim.SetBool("Fall", false);
-        canAttack = false;
-        Debug.Log("hi");
-        //_anim.SetTrigger("AttackAir");
-        yield return new WaitForSeconds(0.3f);
+        _busy = true;
+        Jump();
+        yield return new WaitForSeconds(1f);
         _rb.velocity = new Vector2(0, 0);
-        _attack1.SetActive(true);
-        _cameraShake.ShakeCamera(5f);
-        yield return new WaitForSeconds(0.5f); 
-        _attack1.SetActive(false);
-        Flip();
+        _anim.SetBool("Fall", false);
         _anim.SetTrigger("AttackAir");
         yield return new WaitForSeconds(0.3f);
         _rb.velocity = new Vector2(0, 0);
@@ -101,19 +109,31 @@ public class BossCrystal_Manager : Subject
         _cameraShake.ShakeCamera(5f);
         yield return new WaitForSeconds(0.5f); 
         _attack1.SetActive(false);
-        canAttack = true;
+        LookAtPlayer();
+        _anim.SetTrigger("AttackAir");
+        yield return new WaitForSeconds(0.3f);
+        _rb.velocity = new Vector2(0, 0);
+        _attack1.SetActive(true);
+        _cameraShake.ShakeCamera(5f);
+        yield return new WaitForSeconds(0.5f); 
+        _attack1.SetActive(false);
+        LookAtPlayer();
+        _busy = false;
     }
 
     public IEnumerator Attack2()
     {
+        _busy = true;
         StartCoroutine(Dash());
         _anim.SetTrigger("Attack4");
         yield return new WaitForSeconds(1.2f);
-        Flip();
+        LookAtPlayer();
+        _busy = false;
     }
     
     public void Jump()
     {
+        //canAttack = false;
         //jumpHeight = 0.25f;
         _anim.SetBool("Jump", true);
         _rb.gravityScale = gravityScale;
@@ -124,7 +144,7 @@ public class BossCrystal_Manager : Subject
         else _rb.gravityScale = fallGravityScale;
         if (_rb.velocity.y < -2f) _rb.velocity = new Vector2(_rb.velocity.x, -2f);
     }
-
+    
     public IEnumerator Dash()
     {
         _cameraShake.ShakeCamera(5f);
@@ -143,8 +163,11 @@ public class BossCrystal_Manager : Subject
 
     public void Fall()
     {
-        if(_rb.velocity.y < -2f && _rb.velocity.y > -3f) _anim.SetBool("Fall", true);
-        if (isGround && _rb.velocity.y < -2f && canAttack) StartCoroutine(Attack1());
+        if (_rb.velocity.y < -2f && _rb.velocity.y > -3f)
+        {
+            _anim.SetBool("Jump", false);
+            _anim.SetBool("Fall", true);
+        }
     }
     
     public void OnTriggerEnter2D(Collider2D other)
