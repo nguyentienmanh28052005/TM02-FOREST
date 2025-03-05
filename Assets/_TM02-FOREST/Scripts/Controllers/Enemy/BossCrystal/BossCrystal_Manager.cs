@@ -41,6 +41,11 @@ public class BossCrystal_Manager : Subject
     
     [SerializeField] private GameObject _firePos;
     [SerializeField] GameObject _bullet;
+
+    [Header("Zone")] 
+    [SerializeField] private Transform _point1;
+    [SerializeField] private Transform _point2;
+    
     
     public void Start()
     {
@@ -60,8 +65,7 @@ public class BossCrystal_Manager : Subject
     {
         StartCoroutine( WaitInstanceBullet(0.3f));
     }
-
-
+    
     public IEnumerator WaitInstanceBullet(float time)
     {
         yield return new WaitForSeconds(time);
@@ -77,9 +81,9 @@ public class BossCrystal_Manager : Subject
         transform.Translate(_rb.velocity * Time.deltaTime * _speed);
     }
     
-    public void LookAtPlayer()
+    public void LookAtObject(GameObject _object)
     {
-        if (transform.position.x - _player.transform.position.x > 0)
+        if (transform.position.x - _object.transform.position.x > 0)
         {
             if(_isFacingRight) Flip();
         }
@@ -99,7 +103,7 @@ public class BossCrystal_Manager : Subject
     {
         _busy = true;
         Jump();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.8f);
         _rb.velocity = new Vector2(0, 0);
         _anim.SetBool("Fall", false);
         _anim.SetTrigger("AttackAir");
@@ -109,7 +113,7 @@ public class BossCrystal_Manager : Subject
         _cameraShake.ShakeCamera(5f);
         yield return new WaitForSeconds(0.5f); 
         _attack1.SetActive(false);
-        LookAtPlayer();
+        LookAtObject(_player);
         _anim.SetTrigger("AttackAir");
         yield return new WaitForSeconds(0.3f);
         _rb.velocity = new Vector2(0, 0);
@@ -117,17 +121,29 @@ public class BossCrystal_Manager : Subject
         _cameraShake.ShakeCamera(5f);
         yield return new WaitForSeconds(0.5f); 
         _attack1.SetActive(false);
-        LookAtPlayer();
+        LookAtObject(_player);
+        yield return new WaitForSeconds(2f); 
         _busy = false;
     }
 
     public IEnumerator Attack2()
     {
+        LookAtObject(_player);
         _busy = true;
-        StartCoroutine(Dash());
+        //StartCoroutine(Dash());
         _anim.SetTrigger("Attack4");
+        yield return new WaitForSeconds(3f);
+        LookAtObject(_player);
+        _busy = false;
+    }
+
+    public IEnumerator Attack3()
+    {
+        LookAtObject(_player);
+        _busy = true;
+        _anim.SetTrigger("Attack3");
+        LookAtObject(_player);
         yield return new WaitForSeconds(1.2f);
-        LookAtPlayer();
         _busy = false;
     }
     
@@ -139,7 +155,7 @@ public class BossCrystal_Manager : Subject
         _rb.gravityScale = gravityScale;
         float jumpForce = Mathf.Sqrt(jumpHeight * (Physics2D.gravity.y * _rb.gravityScale) * -2) * _rb.mass;
         _rb.velocity = new Vector2(0f, 0f);
-        _rb.AddForce(new Vector2(transform.localScale.x,1 ) * jumpForce, ForceMode2D.Impulse);
+        _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         if(_rb.velocity.y > 0) _rb.gravityScale = gravityScale;
         else _rb.gravityScale = fallGravityScale;
         if (_rb.velocity.y < -2f) _rb.velocity = new Vector2(_rb.velocity.x, -2f);
@@ -168,6 +184,13 @@ public class BossCrystal_Manager : Subject
             _anim.SetBool("Jump", false);
             _anim.SetBool("Fall", true);
         }
+    }
+
+    public int ObjectInZone(GameObject _object)
+    {
+        if (_object.transform.position.x < _point1.position.x) return 1;
+        else if (_object.transform.position.x < _point2.position.x && _object.transform.position.x > _point1.position.x) return 2;
+        return 3;
     }
     
     public void OnTriggerEnter2D(Collider2D other)

@@ -5,29 +5,58 @@ using UnityEngine;
 public class BossCrystal_Controller : MonoBehaviour
 {
     [SerializeField] private BossCrystal_Manager _manager;
-    [SerializeField] private Transform _playerTrans;
+    [SerializeField] private GameObject _player;
     // Start is called before the first frame update
     void Start()
     {
         _manager = GetComponent<BossCrystal_Manager>();
-        _playerTrans = GameObject.FindWithTag("Player").transform;
+        _player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(Mathf.Abs(transform.position.x - _playerTrans.position.x));
-        //if (Mathf.Abs(transform.position.x - _playerTrans.position.x) < 10f && BossCrystal_Manager.canAttack)
-        
-       if(Mathf.Abs(transform.position.x - _playerTrans.position.x) < 10f && Mathf.Abs(transform.position.x - _playerTrans.position.x) < 9f && !BossCrystal_Manager._busy)
+        // if (!BossCrystal_Manager._busy)
+        // {
+        //     if (_manager.ObjectInZone(gameObject) == 3)
+        //     {
+        //         if (_manager.ObjectInZone(_player) == 1)
+        //             StartCoroutine(_manager.Attack1());
+        //         if (_manager.ObjectInZone(_player) == 2)
+        //             StartCoroutine(_manager.Attack2());
+        //         if (_manager.ObjectInZone(_player) == 3)
+        //             StartCoroutine(_manager.Attack3());
+        //     }
+        //     else if (_manager.ObjectInZone(gameObject) == 2)
+        //     {
+        //         if (_manager.ObjectInZone(_player) == 1 || _manager.ObjectInZone(_player) == 3)
+        //             StartCoroutine(_manager.Attack2());
+        //         if (_manager.ObjectInZone(_player) == 2)
+        //             StartCoroutine(_manager.Attack3());
+        //     }
+        //     else if (_manager.ObjectInZone(gameObject) == 1)
+        //     {
+        //         if (_manager.ObjectInZone(_player) == 3)
+        //             StartCoroutine(_manager.Attack1());
+        //         if (_manager.ObjectInZone(_player) == 2)
+        //             StartCoroutine(_manager.Attack2());
+        //         if (_manager.ObjectInZone(_player) == 1)
+        //             StartCoroutine(_manager.Attack3());
+        //     }
+        // }
+
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            //StartCoroutine(_manager.Attack2());
             StartCoroutine(_manager.Attack1());
         }
-        
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            _manager.InstanceBullet();
+            StartCoroutine(_manager.Attack2());
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            StartCoroutine(_manager.Attack3());
+        }
+        
     }
 }
