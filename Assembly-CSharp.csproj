@@ -181,6 +181,7 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Bomb.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DeathBossRound2.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Data\Loader.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Inventory\Slot.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowIfAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Sound.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\UI\TabGroup.cs" />
@@ -219,6 +220,7 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Slime.cs" />
     <Compile Include="Assets\State Machine\States\NavigateState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\FlyMonsterRound2.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\DesignPattern\Singleton.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\LabelTextAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\TrapWorm1.cs" />
