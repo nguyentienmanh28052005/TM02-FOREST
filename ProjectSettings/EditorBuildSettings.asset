@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Old/FOREST_MAIN/Scenes/Menu.unity
     guid: 2a89d59020012ec4f868d7cefdb31d85
   - enabled: 0
-    path: Assets/Old/FOREST_MAIN/Scenes/Round3.unity
+    path: Assets/_TM02-FOREST/Scenes/Round/Round_3.unity
     guid: 472190e10c00ae5448c042ad4e46070c
   - enabled: 1
     path: Assets/_TM02-FOREST/Scenes/Bootstrap.unity

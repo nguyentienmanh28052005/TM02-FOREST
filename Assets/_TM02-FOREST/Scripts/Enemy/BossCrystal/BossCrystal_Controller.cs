@@ -16,7 +16,7 @@ public class BossCrystal_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Test();
+        Test();
         
     }
 
