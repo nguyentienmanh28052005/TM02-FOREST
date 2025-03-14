@@ -531,7 +531,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 262388914945423404, guid: 5d94dc67d5d161640a38f9bb632d70e0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 918231956143683558, guid: 5d94dc67d5d161640a38f9bb632d70e0, type: 3}
       propertyPath: m_Color.a

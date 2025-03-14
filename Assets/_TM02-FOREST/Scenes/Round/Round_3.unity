@@ -6187,19 +6187,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1478411281}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2711996633011743919, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.1435738
+      value: -43.06358
       objectReference: {fileID: 0}
     - target: {fileID: 2711996633011743919, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -17.095415
+      value: -13.325415
       objectReference: {fileID: 0}
     - target: {fileID: 2711996633011743919, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -9.969371
       objectReference: {fileID: 0}
     - target: {fileID: 2711996633011743919, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6232,10 +6232,6 @@ PrefabInstance:
     - target: {fileID: 5681138666637538112, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_Name
       value: Hooded
-      objectReference: {fileID: 0}
-    - target: {fileID: 8685032274675879893, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -246416,7 +246412,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1364244094}
   - {fileID: 989485080}
   - {fileID: 1275572051}
   - {fileID: 941946608}
@@ -485996,6 +485991,7 @@ SceneRoots:
   - {fileID: 1168053194}
   - {fileID: 2144465168}
   - {fileID: 444441852}
+  - {fileID: 105900330}
   - {fileID: 1478411281}
   - {fileID: 170642821}
   - {fileID: 638824409}

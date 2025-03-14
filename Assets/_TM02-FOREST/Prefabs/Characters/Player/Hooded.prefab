@@ -4844,6 +4844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PS: {fileID: 3497471130516984048}
+  _playerPos: {fileID: 0}
 --- !u!1 &1579410448132339036
 GameObject:
   m_ObjectHideFlags: 0
@@ -4871,13 +4872,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579410448132339036}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.03, y: -3.52, z: 0}
+  m_LocalRotation: {x: -0.27059805, y: 0.6532815, z: 0.6532815, w: 0.27059805}
+  m_LocalPosition: {x: -0.02999878, y: -3.5200005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2711996633011743919}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 135}
 --- !u!198 &4656727064592368842
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -5517,7 +5518,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0.043131255, z: 3.7430756}
     m_Rotation: {x: 0.000009670852, y: 180, z: 314.62366}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 0, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -9682,12 +9683,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579410448132339036}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e298467bd9af6a041957e6213cfd3c5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PS: {fileID: 4656727064592368842}
+  _playerPos: {fileID: 5681138666637538112}
 --- !u!1 &1609582934417744368
 GameObject:
   m_ObjectHideFlags: 0
@@ -14639,6 +14641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PS: {fileID: 6287642182086995877}
+  _playerPos: {fileID: 0}
 --- !u!1 &3710697753388497801
 GameObject:
   m_ObjectHideFlags: 0
@@ -15113,19 +15116,19 @@ MonoBehaviour:
   onJump: 0
   gravityScale: 1
   fallGravityScale: 0.3
+  _particleJump: {fileID: 5732960697627366350}
+  timeParticleJump: 0.2
   dashingPower: 30
   dashingTime: 0.15
-  dashingCooldown: 0.1
+  dashingCooldown: 0.28
   tr: {fileID: 3472689609535216183}
+  _particleDash: {fileID: 452866185622125325}
+  timeParticleDash: 0.15
   boxSize: {x: 0.86, y: 0.15}
   castDistance: 0.19
   groundLayer:
     serializedVersion: 2
     m_Bits: 1088
-  _particleJump: {fileID: 5732960697627366350}
-  _particleDash: {fileID: 452866185622125325}
-  timeParticleJump: 0.2
-  timeParticleDash: 0.15
   isGrounds: 0
 --- !u!114 &7431443191823289404
 MonoBehaviour:
@@ -15230,7 +15233,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0625, y: 0.92039585}
+  m_Offset: {x: -0.0625, y: 0.87872887}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5625, y: 0}
@@ -15241,7 +15244,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.6592083}
+  m_Size: {x: 1, y: 1.7425423}
   m_EdgeRadius: 0
 --- !u!95 &6725664823531145957
 Animator:
@@ -20374,6 +20377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PS: {fileID: 7111875661868185550}
+  _playerPos: {fileID: 0}
 --- !u!1 &7548562805577296460
 GameObject:
   m_ObjectHideFlags: 0
@@ -25218,6 +25222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PS: {fileID: 7896294039334300277}
+  _playerPos: {fileID: 5681138666637538112}
 --- !u!1 &8685032274675879893
 GameObject:
   m_ObjectHideFlags: 0
@@ -25235,7 +25240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1867946517763666726
 Transform:
   m_ObjectHideFlags: 0
@@ -30200,6 +30205,10 @@ PrefabInstance:
       propertyPath: _directionPlayer
       value: 
       objectReference: {fileID: 3710697753388497801}
+    - target: {fileID: 7532610594318298962, guid: 50ac747c12dc06f49a02f75d105040d0, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8320953472192674022, guid: 50ac747c12dc06f49a02f75d105040d0, type: 3}
       propertyPath: _player
       value: 

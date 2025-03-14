@@ -5,7 +5,7 @@ using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 [RequireComponent(typeof(StateManager))]
-public class BossCrystal_Manager : Subject
+public class BossCrystal_Manager : AEnemy
 {
     [SerializeField] private StateManager _stateManager;
     [SerializeField] private GameObject _player;
@@ -73,31 +73,6 @@ public class BossCrystal_Manager : Subject
         bullet.transform.localScale = transform.localScale;
     }
     
-    public void MoveForward()
-    {
-        if (_isFacingRight) _horizontal = 1;
-        else _horizontal = -1;
-        _rb.velocity = new Vector2(_horizontal, _rb.velocity.y);
-        transform.Translate(_rb.velocity * Time.deltaTime * _speed);
-    }
-    
-    public void LookAtObject(GameObject _object)
-    {
-        if (transform.position.x - _object.transform.position.x > 0)
-        {
-            if(_isFacingRight) Flip();
-        }
-        else 
-            if(!_isFacingRight) Flip();
-    }
-
-    public void Flip()
-    {
-        Vector3 kich_thuoc = transform.localScale;
-        kich_thuoc.x = -1 * kich_thuoc.x;
-        transform.localScale = kich_thuoc;
-        _isFacingRight = !_isFacingRight;
-    }
 
     public IEnumerator Attack1()
     {

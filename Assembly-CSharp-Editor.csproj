@@ -1247,10 +1247,6 @@
       <Project>{cf270a8b-afa6-881f-2907-ad00d5dec9ca}</Project>
       <Name>pixelplacement.surge.tween</Name>
     </ProjectReference>
-    <ProjectReference Include="pixelplacement.surge.editor.csproj">
-      <Project>{b7c12c35-ded5-8ea3-80cf-980f2a98885e}</Project>
-      <Name>pixelplacement.surge.editor</Name>
-    </ProjectReference>
     <ProjectReference Include="CitrioN.UI.Panels.csproj">
       <Project>{00d9afbb-80b2-84b0-262a-bee807546720}</Project>
       <Name>CitrioN.UI.Panels</Name>

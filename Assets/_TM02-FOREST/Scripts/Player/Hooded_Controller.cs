@@ -155,7 +155,6 @@ public class Hooded_Controller : Subject
             _anim.SetFloat(_animID_speed, _speed);
         }
         _rb.velocity = new Vector2(_horizontalInput, _rb.velocity.y);
-        Debug.Log(_horizontalInput);
         transform.Translate(_rb.velocity * Time.deltaTime * _speed);
     }
 

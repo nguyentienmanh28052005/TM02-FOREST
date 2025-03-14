@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Extensions\EnumGenerator.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Pixel Art Platformer - Village Props\Script\MovingPlatform.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1_state1.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\OpenDoor.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
@@ -56,21 +55,19 @@
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\UI\CanvasSetups.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Shoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SaveDataPlayer.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\PropertyGroupAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Common\SceneLoader.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Manager\GameResultManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossMove.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkeletonEnemyRound2.cs" />
     <Compile Include="Assets\State Machine\Helpers.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkeletonState2.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\TestSave.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableInEditModeAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\TaiSao.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CollisionControllerSkillFireUltiImpact.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\OffCam.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Manager\AudioManager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Destroy.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossCrystal\BossCrystal_State\BossCrystal_MoveState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\BlockquoteAttribute.cs" />
@@ -82,7 +79,9 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\HealthBar.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\IObserver.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Common\TwoDimensionObject.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Vanish\Vanish_MoveState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkillWatterBall.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Slime\Slime_MoveState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ValidateInputAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\MovingState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
@@ -108,14 +107,17 @@
     <Compile Include="Assets\_TM02-FOREST\Plugins\Sirenix\Odin Validator\EnsureCorrectOdinVersion.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\EnegyBar.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\DesignPattern\PoolManager.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\VanishState1.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Effect\EffectManager.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Common\Grider.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\SectionHeaderAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_Attack1_Controller.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\EnemyHealth.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Skeleton\SkeletonEnemyRound2.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BulletMushroomController.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Data\SaveDataPlayer.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Enum.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossRound1\BossRound1Attack.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Singleton\InitializationRequirements.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Fall.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Coin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -123,15 +125,18 @@
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxIfAttribute.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\PlayerNarrationSystem.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossRound1\BossRound1_death.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\DesignPattern\ObjectPool.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\IndentAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossRound1\BossRound1_state2.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Singleton\Initialization.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Prettier\PrettyDebug.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Rat.cs" />
     <Compile Include="Assets\CameraTarget.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DamageFlash.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Extensions\ObjectCopier.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Singleton\Singleton.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\UI\TabButton.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HorizontalGroupAttribute.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -141,10 +146,8 @@
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_State\BossShadow1_AttackState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Pixel Art Platformer - Village Props\Script\Chest.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\PlayerShade.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ReadOnlyAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\Subject.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\RatState1.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\UI\ContentFitterRefresh.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Attack1.cs" />
     <Compile Include="Assets\State Machine\Modules\StateMachine.cs" />
@@ -152,23 +155,23 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CollisionControllerSkillFire1Impact.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SelectRoundManager.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1_state2.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Extensions\WaitExtension.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SetActiveFalse.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\EnableIfAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\IdleState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1_death.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Common\Script\Utils\SecondOrderDynamics.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ParallaxEffect.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\UI\UIToolkits.cs" />
     <Compile Include="Assets\CanvasStartGame.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\UIController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ShieldSkeleton.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound2_state1.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Rat\RatState1.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\TabGroupAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Skeleton\SkeletonState2.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTweenPro\DOTweenDeUnityExtended.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossRound1\BossRound1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SetEnemy.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ParticleEffect.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\UI\Canvas\CanvasBase.cs" />
@@ -182,6 +185,7 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CoreControllerSkill.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_State\BossShadow1_IdleState.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\RequiredAttribute.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Slime\SlimeHealth.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\PlayerAction.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound2Main.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\UI\NumberInput.cs" />
@@ -189,7 +193,6 @@
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\OnValueChangedAttribute.cs" />
     <Compile Include="Assets\State Machine\States\AirState.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\StateManager.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ShoomHealth.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Effect\Effect.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DataSkillBoss1.cs" />
@@ -207,9 +210,9 @@
     <Compile Include="Assets\State Machine\States\PatrolState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTweenPro\DOTweenTk2d.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SlimeState1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Pendulum.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Prettier\ColorInHierarchy.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Player\PlayerShade.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Dash.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Mushroom1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DonDestroy.cs" />
@@ -218,17 +221,13 @@
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Prettier\ColorGenerator.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_Manager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\EnemyHealthBossRound2.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Key.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\UI\InvertImage.cs" />
-    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\IEnemy.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\InputManager.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\GUIColorAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Boss.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\VanishState2.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_Attack1_Hit.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Vanish.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideLabelAttribute.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -236,15 +235,15 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CollisionController.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestStatePatten\IState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Spin.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideMonoScript.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ShowInInspectorAttribute.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SlimeHealth.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Slime.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\AEnemy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\State Machine\States\NavigateState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\FlyMonsterRound2.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Inventory\Inventory.cs" />
-    <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\DesignPattern\Singleton.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Vanish\VanishHealth.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\LabelTextAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\TrapWorm1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Attack2.cs" />
@@ -252,7 +251,6 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Solid.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DontDestroyOnload.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossCrystal\BossCrystal_Manager.cs" />
     <Compile Include="Assets\State Machine\Modules\State.cs" />
@@ -267,15 +265,14 @@
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxAttribute.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkillFire1.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Common\CameraAutoFit.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\VanishHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\HelperLevel.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Rat\Rat.cs" />
     <Compile Include="Assets\State Machine\Modules\Core.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableLucidEditorAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Butterfly\Butterfly_Controller.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SlimeState2.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Fly.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkillFireUlti.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
@@ -285,13 +282,15 @@
     <Compile Include="Assets\State Machine\Modules\GroundSensor.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Pixel Art Platformer - Village Props\Script\BoundingPlatform.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\UI\Others\DefineValue.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossRound1Attack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SceneO.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\State Machine\Entities\NPC.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Skeleton\SkeletonState1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\BossUlti.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Slime\Slime_AttackState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DataSkill.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Vanish\Vanish.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CameraShake.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Data\Saver.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Flower.cs" />
@@ -299,15 +298,17 @@
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Extensions\FastMath.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Manager\SceneController.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\UI\ToggleButton.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Skeleton\ShieldSkeleton.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossRound1\BossRound1_state1.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SavingFile.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Slime\Slime.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\GroupAttribute.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Attack.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\FootStepManage.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Manager\LoadingScenceController.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTweenPro\DOTweenDeAudio.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SwipeMenu.cs" />
-    <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SkeletonState1.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Vanish\Vanish_AttackState.cs" />
     <None Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\License.txt" />
     <None Include="Packages\com.citrion.settings-menu-creator\UI Toolkit\USS\Editors\Preferences_SettingsMenuCreator_Templates.uss" />
     <None Include="Packages\com.citrion.settings-menu-creator\UI Toolkit\USS\PropertyDrawers\Referenced Stylesheets\TabMenu_SettingHolder.uss" />
@@ -1481,10 +1482,6 @@
     <ProjectReference Include="pixelplacement.surge.tween.csproj">
       <Project>{cf270a8b-afa6-881f-2907-ad00d5dec9ca}</Project>
       <Name>pixelplacement.surge.tween</Name>
-    </ProjectReference>
-    <ProjectReference Include="pixelplacement.surge.editor.csproj">
-      <Project>{b7c12c35-ded5-8ea3-80cf-980f2a98885e}</Project>
-      <Name>pixelplacement.surge.editor</Name>
     </ProjectReference>
     <ProjectReference Include="CitrioN.UI.Panels.csproj">
       <Project>{00d9afbb-80b2-84b0-262a-bee807546720}</Project>

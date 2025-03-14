@@ -39,8 +39,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.StyleProfileSystem"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelplacement.surge.events", "pixelplacement.surge.events.csproj", "{cc16170b-04aa-126c-b245-c89d2243a458}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelplacement.surge.editor", "pixelplacement.surge.editor.csproj", "{b7c12c35-ded5-8ea3-80cf-980f2a98885e}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.TextMeshPro", "UniTask.TextMeshPro.csproj", "{2aab0ae7-ffe1-796f-701f-3c3ee43863ae}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.Editor", "UniTask.Editor.csproj", "{20d51118-a007-e254-8697-fc60c7990fc6}"
@@ -63,13 +61,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelplacement.surge.displa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelplacement.surge.utilities.editor", "pixelplacement.surge.utilities.editor.csproj", "{0cae0e71-805a-81a1-6d00-0674289fafed}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelplacement.Surge.Utilities", "Pixelplacement.Surge.Utilities.csproj", "{1d435de4-157a-c914-4b81-310acff7748e}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelplacement.surge.singleton", "pixelplacement.surge.singleton.csproj", "{d7e5789a-0575-e59c-2448-ac715e04e4e0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelplacement.surge.colliderbutton.editor", "pixelplacement.surge.colliderbutton.editor.csproj", "{33c244e9-855e-e46f-9b15-e4a842350311}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelplacement.surge.chooser", "pixelplacement.surge.chooser.csproj", "{1fb44eb8-d303-7027-2e79-06748b082092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixelplacement.Surge.Utilities", "Pixelplacement.Surge.Utilities.csproj", "{1d435de4-157a-c914-4b81-310acff7748e}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.UI.Components.UIToolkit", "CitrioN.UI.Components.UIToolkit.csproj", "{8cd9e687-4b0d-b583-d3a5-d6f5d8431d42}"
 EndProject
@@ -78,6 +76,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.DOTween", "UniTask.DOTween.csproj", "{f0ff1d63-dad8-f372-1c19-29a69a2e0a84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitrioN.StyleProfileSystem.Editor", "CitrioN.StyleProfileSystem.Editor.csproj", "{75a12c0d-bcec-5ab0-b276-a7246d4218f5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixelplacement.surge.editor", "pixelplacement.surge.editor.csproj", "{b7c12c35-ded5-8ea3-80cf-980f2a98885e}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -122,8 +122,6 @@ Global
 		{39db6001-a05e-c66a-7153-15fc68d701bc}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{cc16170b-04aa-126c-b245-c89d2243a458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{cc16170b-04aa-126c-b245-c89d2243a458}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{b7c12c35-ded5-8ea3-80cf-980f2a98885e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{b7c12c35-ded5-8ea3-80cf-980f2a98885e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2aab0ae7-ffe1-796f-701f-3c3ee43863ae}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2aab0ae7-ffe1-796f-701f-3c3ee43863ae}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20d51118-a007-e254-8697-fc60c7990fc6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -146,14 +144,14 @@ Global
 		{0fa9544a-75f5-af9d-396f-8ea285a0cce5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0cae0e71-805a-81a1-6d00-0674289fafed}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0cae0e71-805a-81a1-6d00-0674289fafed}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1d435de4-157a-c914-4b81-310acff7748e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1d435de4-157a-c914-4b81-310acff7748e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d7e5789a-0575-e59c-2448-ac715e04e4e0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d7e5789a-0575-e59c-2448-ac715e04e4e0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33c244e9-855e-e46f-9b15-e4a842350311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{33c244e9-855e-e46f-9b15-e4a842350311}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1fb44eb8-d303-7027-2e79-06748b082092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1fb44eb8-d303-7027-2e79-06748b082092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1d435de4-157a-c914-4b81-310acff7748e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1d435de4-157a-c914-4b81-310acff7748e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8cd9e687-4b0d-b583-d3a5-d6f5d8431d42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8cd9e687-4b0d-b583-d3a5-d6f5d8431d42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9d3f8679-c39e-0fef-d837-f3b7d35de73b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -162,6 +160,8 @@ Global
 		{f0ff1d63-dad8-f372-1c19-29a69a2e0a84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75a12c0d-bcec-5ab0-b276-a7246d4218f5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{75a12c0d-bcec-5ab0-b276-a7246d4218f5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b7c12c35-ded5-8ea3-80cf-980f2a98885e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b7c12c35-ded5-8ea3-80cf-980f2a98885e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
