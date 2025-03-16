@@ -6,7 +6,8 @@ public class Vanish_AttackState : IState
 {
     private Vanish _controller;
     private Animator _animator;
-    
+    private static readonly int Angry = Animator.StringToHash("Angry");
+
     public Vanish_AttackState(Vanish controller, Animator animator)
     {
         _controller = controller;
@@ -14,7 +15,7 @@ public class Vanish_AttackState : IState
     }
     public void Enter()
     {
-        _animator.SetBool("Angry", true);
+        _animator.SetBool(Angry, true);
         _controller.SetSpeed(3f);
     }
 
@@ -25,7 +26,7 @@ public class Vanish_AttackState : IState
 
     public void Exit()
     {
-        _animator.SetBool("Angry", false);
+        _animator.SetBool(Angry, false);
         _controller.SetSpeed(1f);
     }
 }

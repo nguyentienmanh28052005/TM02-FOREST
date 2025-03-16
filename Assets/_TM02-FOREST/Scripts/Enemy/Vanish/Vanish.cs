@@ -42,4 +42,7 @@ public class Vanish : AEnemy
     {
         _speed = speed;
     }
+    
+    
+    
 }

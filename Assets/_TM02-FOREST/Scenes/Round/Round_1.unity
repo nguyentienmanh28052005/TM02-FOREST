@@ -5940,6 +5940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9070919430683840944, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9079273862896493173, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.93
@@ -11030,6 +11034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9070919430683840944, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9079273862896493173, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.13
@@ -11340,6 +11348,10 @@ PrefabInstance:
     - target: {fileID: 9070919430683840944, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
       propertyPath: m_Name
       value: Slime (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070919430683840944, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9079273862896493173, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -165037,6 +165049,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3636183595370231871, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5681138666637538112, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_Name
       value: Hooded (1)
@@ -165089,6 +165105,10 @@ PrefabInstance:
       propertyPath: m_ApplyToSortingLayers.Array.data[10]
       value: -843259483
       objectReference: {fileID: 0}
+    - target: {fileID: 7952170659764892737, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8685032274675879893, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -165097,7 +165117,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8361847595768513029, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -390171,10 +390192,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2042851775}
     m_Modifications:
+    - target: {fileID: 215482857878951909, guid: 2b82cf84547ddd24e849a2c16979374a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 723993848257971512, guid: 2b82cf84547ddd24e849a2c16979374a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4526477723014208376, guid: 2b82cf84547ddd24e849a2c16979374a, type: 3}
       propertyPath: _player
       value: 
       objectReference: {fileID: 480981440}
+    - target: {fileID: 4526477723014208376, guid: 2b82cf84547ddd24e849a2c16979374a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4526477723014208376, guid: 2b82cf84547ddd24e849a2c16979374a, type: 3}
       propertyPath: _playerSubject
       value: 
@@ -391183,6 +391216,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Vanish '
       objectReference: {fileID: 0}
+    - target: {fileID: 3076867252267309979, guid: e7c6c418c0ed44f47bef303a0834acd5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417877774668225364, guid: e7c6c418c0ed44f47bef303a0834acd5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419715733061880412, guid: e7c6c418c0ed44f47bef303a0834acd5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -391243,6 +391288,10 @@ PrefabInstance:
     - target: {fileID: 9070919430683840944, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070919430683840944, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9079273862896493173, guid: e0aa5e6a65523f34ca21f66bf1e044b8, type: 3}
       propertyPath: m_LocalPosition.x

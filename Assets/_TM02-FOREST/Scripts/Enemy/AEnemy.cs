@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,13 +12,14 @@ public abstract class AEnemy : Subject
     protected int _horizontal = 1;
     public float _speed = 1f;
     protected Rigidbody2D _rb;
+    private static readonly int Hit = Animator.StringToHash("Hit");
 
     public void Attack()
     {
         
     }
 
-    public void LookAtObject(GameObject _object)
+    protected void LookAtObject(GameObject _object)
     {
         if (transform.position.x - _object.transform.position.x > 0)
         {
@@ -35,27 +37,36 @@ public abstract class AEnemy : Subject
         transform.Translate(_rb.velocity * Time.deltaTime * _speed);
     }
 
-    public void MoveToObject(GameObject _object)
+    protected void MoveToObject(GameObject _object)
     {
         LookAtObject(_object);
         MoveForward();
     }
 
-    public void BackToHome()
+    protected void BackToHome()
     {
         
     }
 
-    public void TakeDamage()
+    protected void TakeDamage()
     {
-        
+        _anim.SetTrigger(Hit);
     }
     
-    public void Flip()
+    protected void Flip()
     {
         Vector3 size = transform.localScale;
         size.x = -1 * size.x;
         transform.localScale = size;
         _isFacingRight = !_isFacingRight;
     }
+
+    public virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Skill"))
+        {
+            
+        }
+    }
+    
 }

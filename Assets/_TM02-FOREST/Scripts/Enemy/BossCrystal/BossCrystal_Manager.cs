@@ -8,12 +8,6 @@ using UnityEngine;
 public class BossCrystal_Manager : AEnemy
 {
     [SerializeField] private StateManager _stateManager;
-    [SerializeField] private GameObject _player;
-    private bool _isFacingRight = false;
-    private Animator _anim;
-    private int _horizontal = -1;
-    public float _speed = 0f;
-    private Rigidbody2D _rb;
     public static string _currentState;
     private bool _isAttack;
     
@@ -45,8 +39,14 @@ public class BossCrystal_Manager : AEnemy
     [Header("Zone")] 
     [SerializeField] private Transform _point1;
     [SerializeField] private Transform _point2;
-    
-    
+    private static readonly int Jump1 = Animator.StringToHash("Jump");
+    private static readonly int Fall1 = Animator.StringToHash("Fall");
+    private static readonly int Attack4 = Animator.StringToHash("Attack3");
+    private static readonly int Attack5 = Animator.StringToHash("Attack4");
+    private static readonly int AttackAir = Animator.StringToHash("AttackAir");
+    private static readonly int Speed = Animator.StringToHash("Speed");
+
+
     public void Start()
     {
         _stateManager = GetComponent<StateManager>();
@@ -57,7 +57,7 @@ public class BossCrystal_Manager : AEnemy
     public void Update()
     {
         isGround = isGrounded();
-        _anim.SetFloat("Speed", _speed);
+        _anim.SetFloat(Speed, _speed);
         Fall();
     }
     
@@ -80,8 +80,8 @@ public class BossCrystal_Manager : AEnemy
         Jump();
         yield return new WaitForSeconds(1.3f);
         _rb.velocity = new Vector2(0, 0);
-        _anim.SetBool("Fall", false);
-        _anim.SetTrigger("AttackAir");
+        _anim.SetBool(Fall1, false);
+        _anim.SetTrigger(AttackAir);
         yield return new WaitForSeconds(0.3f);
         _rb.velocity = new Vector2(0, 0);
         _attack1.SetActive(true);
@@ -89,7 +89,7 @@ public class BossCrystal_Manager : AEnemy
         yield return new WaitForSeconds(0.5f); 
         _attack1.SetActive(false);
         Flip();
-        _anim.SetTrigger("AttackAir");
+        _anim.SetTrigger(AttackAir);
         yield return new WaitForSeconds(0.3f);
         _rb.velocity = new Vector2(0, 0);
         _attack1.SetActive(true);
@@ -106,7 +106,7 @@ public class BossCrystal_Manager : AEnemy
         LookAtObject(_player);
         _busy = true;
         //StartCoroutine(Dash());
-        _anim.SetTrigger("Attack4");
+        _anim.SetTrigger(Attack5);
         yield return new WaitForSeconds(3f);
         LookAtObject(_player);
         _busy = false;
@@ -116,7 +116,7 @@ public class BossCrystal_Manager : AEnemy
     {
         LookAtObject(_player);
         _busy = true;
-        _anim.SetTrigger("Attack3");
+        _anim.SetTrigger(Attack4);
         LookAtObject(_player);
         yield return new WaitForSeconds(1.2f);
         _busy = false;
@@ -126,7 +126,7 @@ public class BossCrystal_Manager : AEnemy
     {
         //canAttack = false;
         //jumpHeight = 0.25f;
-        _anim.SetBool("Jump", true);
+        _anim.SetBool(Jump1, true);
         _rb.gravityScale = gravityScale;
         float jumpForce = Mathf.Sqrt(jumpHeight * (Physics2D.gravity.y * _rb.gravityScale) * -2) * _rb.mass;
         _rb.velocity = new Vector2(0f, 0f);
@@ -156,8 +156,8 @@ public class BossCrystal_Manager : AEnemy
     {
         if (_rb.velocity.y < -2f && _rb.velocity.y > -3f)
         {
-            _anim.SetBool("Jump", false);
-            _anim.SetBool("Fall", true);
+            _anim.SetBool(Jump1, false);
+            _anim.SetBool(Fall1, true);
         }
     }
 
@@ -168,13 +168,14 @@ public class BossCrystal_Manager : AEnemy
         return 3;
     }
     
-    public void OnTriggerEnter2D(Collider2D other)
+    public override void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "HitRange")
+        base.OnTriggerEnter2D(other);
+        if (other.CompareTag("HitRange"))
         {
             Flip();
         }
-        if (other.gameObject.tag == "Skill" && _currentState != "IdleState" && !_isAttack)
+        if (other.CompareTag("Skill") && _currentState != "IdleState" && !_isAttack)
         {
         }
     }
