@@ -22,6 +22,7 @@ TagManager:
   - Coin
   - Key
   - HitRange
+  - PlayerPos
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,7 @@ public abstract class AEnemy : Subject
     protected int _horizontal = 1;
     public float _speed = 1f;
     protected Rigidbody2D _rb;
+    protected bool _busy;
     private static readonly int Hit = Animator.StringToHash("Hit");
 
     public void Attack()
@@ -29,6 +30,19 @@ public abstract class AEnemy : Subject
         if(!_isFacingRight) Flip();
     }
 
+    protected void LookAtObject2(GameObject _object)
+    {
+        Vector2 direction = (_object.transform.position - transform.position).normalized;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+    }
+
+    protected void MoveToObject2(GameObject _object)
+    { 
+        LookAtObject2(_object);
+        transform.position = Vector3.MoveTowards(transform.position, _object.transform.position, Time.deltaTime * _speed);
+    }
+    
     public void MoveForward()
     {
         if (_isFacingRight) _horizontal = 1;
@@ -42,6 +56,7 @@ public abstract class AEnemy : Subject
         LookAtObject(_object);
         MoveForward();
     }
+    
 
     protected void BackToHome()
     {
@@ -51,6 +66,19 @@ public abstract class AEnemy : Subject
     protected void TakeDamage()
     {
         _anim.SetTrigger(Hit);
+        StartCoroutine(Wait());
+    }
+
+    protected IEnumerator Wait()
+    {
+        _busy = true;
+        _speed = 0;
+        _rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        yield return new WaitForSeconds(1f);
+        _speed = 3f;
+        _rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+        _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        _busy = false;
     }
     
     protected void Flip()
@@ -63,9 +91,13 @@ public abstract class AEnemy : Subject
 
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Skill"))
+        if (other.CompareTag("Skill") && !_busy)
         {
-            
+            TakeDamage();
+        }
+        if (other.CompareTag("SkillUlti") && !_busy)
+        {
+            TakeDamage();
         }
     }
     

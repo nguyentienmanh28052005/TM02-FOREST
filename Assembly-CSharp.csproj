@@ -291,6 +291,7 @@
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Slime\Slime_AttackState.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\DataSkill.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Vanish\Vanish.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Skull\Skull_Manager.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CameraShake.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Data\Saver.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Flower.cs" />
@@ -308,6 +309,7 @@
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTweenPro\DOTweenDeAudio.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SwipeMenu.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Agis\Agis_Manager.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Vanish\Vanish_AttackState.cs" />
     <None Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\License.txt" />
     <None Include="Packages\com.citrion.settings-menu-creator\UI Toolkit\USS\Editors\Preferences_SettingsMenuCreator_Templates.uss" />
