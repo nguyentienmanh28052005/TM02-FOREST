@@ -12,10 +12,28 @@ public class Skull_Manager : AEnemy
         _player = GameObject.FindGameObjectWithTag("PlayerPos");
         _targetPos = new Vector3(_player.transform.position.x, _player.transform.position.y + 1f,
             _player.transform.position.z);
+        _anim = GetComponentInChildren<Animator>();
+        _rb = GetComponent<Rigidbody2D>();
 
     }
     public void Update()
     {
-        MoveToObject2(_player);
+        if(!_busy) MoveToObject2(_player);
+    }
+
+    protected override void TakeDamage()
+    {
+        Debug.Log("hi");
+        //transform.rotation = Quaternion.Euler(0, 0, 0);
+        base.TakeDamage();
+        StartCoroutine(Death(0.4f));
+    }
+
+    public override void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Skill"))
+        {
+           TakeDamage();
+        }
     }
 }

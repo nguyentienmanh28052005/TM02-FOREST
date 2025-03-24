@@ -282,6 +282,7 @@
     <Compile Include="Assets\State Machine\Modules\GroundSensor.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Pixel Art Platformer - Village Props\Script\BoundingPlatform.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\UI\Others\DefineValue.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Agis\Agis_State\Agis_Attack1State.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\SceneO.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\ObjectPool.cs" />

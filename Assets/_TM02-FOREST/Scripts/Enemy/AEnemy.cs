@@ -63,7 +63,7 @@ public abstract class AEnemy : Subject
         
     }
 
-    protected void TakeDamage()
+    protected virtual void TakeDamage()
     {
         _anim.SetTrigger(Hit);
         StartCoroutine(Wait());
@@ -89,6 +89,12 @@ public abstract class AEnemy : Subject
         _isFacingRight = !_isFacingRight;
     }
 
+    protected virtual IEnumerator Death(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
+    }
+    
     public virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Skill") && !_busy)
