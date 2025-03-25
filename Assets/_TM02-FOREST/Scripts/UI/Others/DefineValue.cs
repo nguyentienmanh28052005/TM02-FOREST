@@ -14,4 +14,8 @@ public class DefineValue : MonoBehaviour
     public const string GEM_LIFESTEAL = "LifeStealGem";
     public const string GEM_SPIRIT = "SpiritGem";
     public const string GEM_CRITICAL = "CriticalGem";
+    
+    
+    //Notify
+    public const string TAKE_DAMAGE = "TakeDamage";
 }

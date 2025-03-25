@@ -6,13 +6,13 @@ public class PlayerNarrationSystem : MonoBehaviour, IObserver
 
     [SerializeField] private Subject _playerSubject;
     private int _jumpCount = 0;
-    public void OnNotify(PlayerAction action)
-    {
-        if (action == PlayerAction.Jump)
-        {
-            _jumpCount += 1;
-        }
-    }
+    // public void OnNotify(String action)
+    // {
+    //     if (action == PlayerAction.Jump)
+    //     {
+    //         _jumpCount += 1;
+    //     }
+    // }
 
     private void Update()
     {
@@ -27,5 +27,10 @@ public class PlayerNarrationSystem : MonoBehaviour, IObserver
     private void OnDisable()
     {
         _playerSubject.RemoveObserver(this);
+    }
+
+    public void OnNotify(string action)
+    {
+        throw new NotImplementedException();
     }
 }

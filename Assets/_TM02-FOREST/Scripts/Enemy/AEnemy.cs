@@ -12,7 +12,7 @@ public abstract class AEnemy : Subject
     protected int _horizontal = 1;
     public float _speed = 1f;
     protected Rigidbody2D _rb;
-    protected bool _busy;
+    protected bool _busy = false;
     private static readonly int Hit = Animator.StringToHash("Hit");
 
     public void Attack()

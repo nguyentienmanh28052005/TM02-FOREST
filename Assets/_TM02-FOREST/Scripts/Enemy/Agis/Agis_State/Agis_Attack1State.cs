@@ -2,17 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Agis_Attack1State : MonoBehaviour
+public class Agis_Attack1State : IState
 {
-    // Start is called before the first frame update
-    void Start()
+    private Agis_Manager _manager;
+    private Animator _animator;
+    
+    public Agis_Attack1State(Agis_Manager manager, Animator animator)
     {
-        
+        _manager = manager;
+        _animator = animator;
+    }
+    
+    public void Enter()
+    {
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Execute()
     {
-        
+        _manager.SetAttackPositionAttack1();
+        _manager.SpawnSkull();
+    }
+
+    public void Exit()
+    {
+        _manager.SetOriginPositionAttack1();
     }
 }

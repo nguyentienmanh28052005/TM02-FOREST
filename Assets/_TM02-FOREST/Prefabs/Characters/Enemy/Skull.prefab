@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Intensity: 3.16
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000bf0321bb010da91a4fce21cb315839b1fb2a6cb1ef6c5e8d7f5abcf5fbfe7f135bc48e12336a966ba5e1bccd
+  m_ApplyToSortingLayers: 00000000bf0321bb4fce21cb315839b1fb2a6cb1ef6c5e8d7f5abcf5fbfe7f135bc48e12336a966ba5e1bccd
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 4366647443862080979}
   m_Layer: 10
   m_Name: Skull
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

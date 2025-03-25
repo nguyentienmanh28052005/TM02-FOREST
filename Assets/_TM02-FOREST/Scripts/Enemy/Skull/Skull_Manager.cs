@@ -23,7 +23,6 @@ public class Skull_Manager : AEnemy
 
     protected override void TakeDamage()
     {
-        Debug.Log("hi");
         //transform.rotation = Quaternion.Euler(0, 0, 0);
         base.TakeDamage();
         StartCoroutine(Death(0.4f));
@@ -31,9 +30,16 @@ public class Skull_Manager : AEnemy
 
     public override void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Skill"))
+        if (other.CompareTag("Skill") || other.CompareTag("Player"))
         {
            TakeDamage();
+        }
+    }
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            TakeDamage();
         }
     }
 }

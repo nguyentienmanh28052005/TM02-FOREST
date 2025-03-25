@@ -184,6 +184,7 @@
     <Compile Include="Assets\_TM02-FOREST\Plugins\_Dasis\Enum\Entity.cs" />
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\CoreControllerSkill.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_State\BossShadow1_IdleState.cs" />
+    <Compile Include="Assets\Hole.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\RequiredAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Slime\SlimeHealth.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\TestObserver\PlayerAction.cs" />
@@ -228,6 +229,7 @@
     <Compile Include="Assets\Old\FOREST_MAIN\Scripts\Boss.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossShadow1\BossShadow1_Attack1_Hit.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Agis\Agis_State\Agis_OriginState.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideLabelAttribute.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -255,6 +257,7 @@
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\BossCrystal\BossCrystal_Manager.cs" />
     <Compile Include="Assets\State Machine\Modules\State.cs" />
     <Compile Include="Assets\State Machine\States\KneelState.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Player\PlayerHealth_Old.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\ButtonAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
@@ -268,6 +271,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\HelperLevel.cs" />
     <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Rat\Rat.cs" />
+    <Compile Include="Assets\_TM02-FOREST\Scripts\Enemy\Agis\Agis_Controller.cs" />
     <Compile Include="Assets\State Machine\Modules\Core.cs" />
     <Compile Include="Assets\Old\2DWater\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableLucidEditorAttribute.cs" />
     <Compile Include="Assets\_TM02-FOREST\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
