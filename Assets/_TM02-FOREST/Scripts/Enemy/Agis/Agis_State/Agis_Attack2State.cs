@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Agis_Attack1State : IState
+public class Agis_Attack2State : IState
 {
     private Agis_Manager _manager;
     private Animator _animator;
     
-    public Agis_Attack1State(Agis_Manager manager, Animator animator)
+    public Agis_Attack2State(Agis_Manager manager, Animator animator)
     {
         _manager = manager;
         _animator = animator;
@@ -15,12 +15,12 @@ public class Agis_Attack1State : IState
     
     public void Enter()
     {
+        
     }
 
     public void Execute()
     {
-        _manager.SetAttackPositionAttack1();
-        _manager.SpawnSkull();
+        _manager.MoveAttack2();
     }
 
     public void Exit()

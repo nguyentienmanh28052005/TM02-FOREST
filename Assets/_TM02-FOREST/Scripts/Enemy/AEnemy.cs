@@ -26,8 +26,10 @@ public abstract class AEnemy : Subject
         {
             if(_isFacingRight) Flip();
         }
-        else 
-        if(!_isFacingRight) Flip();
+        else
+        {
+            if(!_isFacingRight) Flip();
+        }    
     }
 
     protected void LookAtObject2(GameObject _object)
@@ -51,7 +53,7 @@ public abstract class AEnemy : Subject
         transform.Translate(_rb.velocity * Time.deltaTime * _speed);
     }
 
-    protected void MoveToObject(GameObject _object)
+    protected virtual void MoveToObject(GameObject _object)
     {
         LookAtObject(_object);
         MoveForward();

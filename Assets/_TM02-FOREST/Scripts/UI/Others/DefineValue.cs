@@ -18,4 +18,10 @@ public class DefineValue : MonoBehaviour
     
     //Notify
     public const string TAKE_DAMAGE = "TakeDamage";
+    
+    //AgisPosition
+    public const string AGIS_ORIGINAL_POSITION = "Original";
+    public const string AGIS_LEFT_POSITION = "Left";
+    public const string AGIS_RIGHT_POSITION = "Right";
+
 }
