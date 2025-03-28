@@ -26,11 +26,12 @@ public class Agis_Manager : AEnemy
         _player = GameObject.FindGameObjectWithTag("Player");
         _stateManager = GetComponent<StateManager>();
         _rb = GetComponent<Rigidbody2D>();
+        Attack1();
     }
 
     public void Update()
     {
-        Attack2();
+        
         Debug.Log(_canAttack);
     }
 
@@ -94,7 +95,7 @@ public class Agis_Manager : AEnemy
 
     private IEnumerator WaitExitAttack1()
     {
-        yield return new WaitForSeconds(50f);
+        yield return new WaitForSeconds(10f);
         _stateManager.ChangeState(new Agis_OriginalState(this, _animator));
     }
 
@@ -115,7 +116,7 @@ public class Agis_Manager : AEnemy
         _rb.constraints = RigidbodyConstraints2D.FreezePositionX;
         yield return new WaitForSeconds(0.1f);
         _skill2Prefab.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         _skill2Prefab.SetActive(false);
         _rb.constraints = RigidbodyConstraints2D.None;
         _busy = false;

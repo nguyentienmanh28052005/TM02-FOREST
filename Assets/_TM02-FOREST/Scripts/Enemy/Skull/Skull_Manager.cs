@@ -18,7 +18,7 @@ public class Skull_Manager : AEnemy
     }
     public void Update()
     {
-        if(!_busy) MoveToObject2(_player);
+        if(!_busy) MoveToObject2D(_player);
     }
 
     protected override void TakeDamage()
