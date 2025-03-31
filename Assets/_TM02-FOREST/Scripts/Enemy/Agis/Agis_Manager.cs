@@ -25,23 +25,68 @@ public class Agis_Manager : AEnemy
         _animator = GetComponent<Animator>();
         _player = GameObject.FindGameObjectWithTag("Player");
         _stateManager = GetComponent<StateManager>();
-        _rb = GetComponent<Rigidbody2D>();
-        Attack1();
+        _rb = GetComponent<Rigidbody2D>();  
     }
 
     public void Update()
     {
-        
-        Debug.Log(_canAttack);
+        if(Input.GetKeyDown(KeyCode.R)) Attack1();
+        if (Input.GetKeyDown(KeyCode.T)) Attack2();
     }
-
+    
+    //Attack 1
     public void Attack1()
     {
         _stateManager.ChangeState(new Agis_Attack1State(this, _animator));
         StartCoroutine(WaitExitAttack1());
     }
+    
+    public void SpawnSkull()
+    {
+        if (!_busy) StartCoroutine(Spawn());
+    }
+    
+    private IEnumerator WaitExitAttack1()
+    {
+        yield return new WaitForSeconds(10f);
+        _stateManager.ChangeState(new Agis_OriginalState(this, _animator));
+    }
+
+    private IEnumerator Spawn()
+    {
+        _busy = true;
+        yield return new WaitForSeconds(4f);
+        foreach (var hole in _holes)
+        {
+            Instantiate(_bulletPrefab, hole.transform.position, Quaternion.identity);
+        }
+        _busy = false;
+    }
+    
+    public void SetOriginalPositionAttack1()
+    {
+        if(_holes[0].GetCurrentPosition() == "Attack1") _holes[0].MoveToOriginPosition(_attack1OriginalPositions[0]);
+        if(_holes[1].GetCurrentPosition() == "Attack1") _holes[1].MoveToOriginPosition(_attack1OriginalPositions[1]);
+        if(_holes[2].GetCurrentPosition() == "Attack1") _holes[2].MoveToOriginPosition(_attack1OriginalPositions[2]);
+        if(_holes[3].GetCurrentPosition() == "Attack1") _holes[3].MoveToOriginPosition(_attack1OriginalPositions[3]);
+    }
+    
+    public void SetAttackPositionAttack1()
+    {
+        if(_holes[0].GetCurrentPosition() == "Origin") _holes[0].MoveToAttack1Position(_attack1AttackPositions[0]);
+        if(_holes[1].GetCurrentPosition() == "Origin") _holes[1].MoveToAttack1Position(_attack1AttackPositions[1]);
+        if(_holes[2].GetCurrentPosition() == "Origin") _holes[2].MoveToAttack1Position(_attack1AttackPositions[2]);
+        if(_holes[3].GetCurrentPosition() == "Origin") _holes[3].MoveToAttack1Position(_attack1AttackPositions[3]);
+    }
+    
+    //Attack 2
 
     public void Attack2()
+    {
+        _stateManager.ChangeState(new Agis_Attack2State(this, _animator));
+        StartCoroutine(WaitExitAttack2());
+    }
+    public void Attack2MoveAndSpawnBullet()
     {
         if(!_busy) MoveAttack2();
         if (transform.position.x < _player.transform.position.x + 0.5f &&
@@ -79,37 +124,6 @@ public class Agis_Manager : AEnemy
         }
     }
 
-    protected override void MoveToObject(GameObject _object)
-    {
-        if (!_busy)
-        {
-            LookAtObject(_object);
-            MoveForward();
-        }
-    }
-    
-    public void SpawnSkull()
-    {
-        if (!_busy) StartCoroutine(Spawn());
-    }
-
-    private IEnumerator WaitExitAttack1()
-    {
-        yield return new WaitForSeconds(10f);
-        _stateManager.ChangeState(new Agis_OriginalState(this, _animator));
-    }
-
-    private IEnumerator Spawn()
-    {
-        _busy = true;
-        yield return new WaitForSeconds(4f);
-        foreach (var hole in _holes)
-        {
-            Instantiate(_bulletPrefab, hole.transform.position, Quaternion.identity);
-        }
-        _busy = false;
-    }
-
     private IEnumerator SpawnBulletSkill2()
     {
         _busy = true;
@@ -121,21 +135,28 @@ public class Agis_Manager : AEnemy
         _rb.constraints = RigidbodyConstraints2D.None;
         _busy = false;
     }
-    
-    public void SetOriginalPositionAttack1()
+
+    public void MoveToOriginalPosition()
     {
-        if(_holes[0].GetCurrentPosition() == "Attack1") _holes[0].MoveToOriginPosition(_attack1OriginalPositions[0]);
-        if(_holes[1].GetCurrentPosition() == "Attack1") _holes[1].MoveToOriginPosition(_attack1OriginalPositions[1]);
-        if(_holes[2].GetCurrentPosition() == "Attack1") _holes[2].MoveToOriginPosition(_attack1OriginalPositions[2]);
-        if(_holes[3].GetCurrentPosition() == "Attack1") _holes[3].MoveToOriginPosition(_attack1OriginalPositions[3]);
+        if (transform.position.x > _pointAttack2[1].transform.position.x + 0.1f ||
+            transform.position.x < _pointAttack2[1].transform.position.x - 0.1f)
+            MoveToObject(_pointAttack2[1]);
+        else _rb.velocity = new Vector2(0f, 0f);
+    }
+
+    private IEnumerator WaitExitAttack2()
+    {
+        yield return new WaitForSeconds(10f);
+        _stateManager.ChangeState(new Agis_OriginalState(this, _animator));
     }
     
-    public void SetAttackPositionAttack1()
+    //Move
+    protected override void MoveToObject(GameObject _object)
     {
-        if(_holes[0].GetCurrentPosition() == "Origin") _holes[0].MoveToAttack1Position(_attack1AttackPositions[0]);
-        if(_holes[1].GetCurrentPosition() == "Origin") _holes[1].MoveToAttack1Position(_attack1AttackPositions[1]);
-        if(_holes[2].GetCurrentPosition() == "Origin") _holes[2].MoveToAttack1Position(_attack1AttackPositions[2]);
-        if(_holes[3].GetCurrentPosition() == "Origin") _holes[3].MoveToAttack1Position(_attack1AttackPositions[3]);
+        if (!_busy)
+        {
+            LookAtObject(_object);
+            MoveForward();
+        }
     }
-    
 }

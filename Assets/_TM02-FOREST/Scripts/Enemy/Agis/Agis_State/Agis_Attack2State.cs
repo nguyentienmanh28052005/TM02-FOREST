@@ -20,11 +20,10 @@ public class Agis_Attack2State : IState
 
     public void Execute()
     {
-        _manager.MoveAttack2();
+        _manager.Attack2MoveAndSpawnBullet();
     }
 
     public void Exit()
     {
-        _manager.SetOriginalPositionAttack1();
     }
 }
