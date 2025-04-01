@@ -36,7 +36,9 @@ public class Slime : AEnemy
 
     public void MoveToPlayer()
     {
-        MoveToObject(_player);
+        if(transform.position.x > _player.transform.position.x + 1f ||
+           transform.position.x < _player.transform.position.x - 1f)
+            MoveToObject(_player);
     }
 
     public void SetSpeed(float speed)

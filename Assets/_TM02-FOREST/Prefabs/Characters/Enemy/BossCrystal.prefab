@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2853422400730014165}
   - component: {fileID: 1988866189680881969}
   - component: {fileID: 8747989514823054829}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossCrystal_Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6636974026924112674}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Attack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 8903254361465670787}
   - component: {fileID: 8044311104950094325}
   - component: {fileID: 6913613222638233137}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Earth Bump_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 4886303852899534599}
   - component: {fileID: 6141915753566809939}
   - component: {fileID: 1572712055430497226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Earth Bump_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6737749694957288486}
   - component: {fileID: 4402957845292108180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light 2D (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5720260817662557979}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Skill_Pos '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 8711341470545869834}
   - component: {fileID: 8650588581239852493}
   - component: {fileID: 2744077332865902576}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,9 +516,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7508073be28368f4086249d21ada309c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateManager: {fileID: 0}
   _player: {fileID: 0}
   _speed: 2
+  _stateManager: {fileID: 0}
   boxSize: {x: 0.8, y: 0.15}
   castDistance: 3.1
   groundLayer:
@@ -536,6 +536,8 @@ MonoBehaviour:
   _cameraShake: {fileID: 0}
   _firePos: {fileID: 8001918928125948587}
   _bullet: {fileID: 3019746822734692866, guid: 9aa15b2c652793f42a6249e71e357655, type: 3}
+  _point1: {fileID: 0}
+  _point2: {fileID: 0}
 --- !u!50 &3462347767887652688
 Rigidbody2D:
   serializedVersion: 4
@@ -633,4 +635,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _manager: {fileID: 0}
-  _playerTrans: {fileID: 0}
+  _player: {fileID: 0}

@@ -5,7 +5,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Inventory : MonoBehaviour
+public class CanvasInventory : CanvasBase
 {
     [SerializeField] private List<GameObject> _gem;
     [SerializeField] private List<GameObject> _description;

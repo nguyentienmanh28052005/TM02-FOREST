@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,6 @@ public class Bomb : MonoBehaviour
     private Vector2 _direction;
     private float speed;
     private Rigidbody2D _rb;
-    [SerializeField] private Transform _bee;
     void Start()
     {
         // _rb = GetComponent<Rigidbody2D>();
@@ -31,17 +31,13 @@ public class Bomb : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Map")
+        if (other.gameObject.CompareTag("Map"))
         {
             Vector3 spon = transform.position;
             spon.y -= 0.5f;
-            GameObject fire = Instantiate(_bomb, spon, _bee.rotation);
+            GameObject fire = Instantiate(_bomb, spon, Quaternion.identity);
             fire.SetActive(true);
             Destroy(gameObject);
         }
     }
-
-    
-        
-
 }

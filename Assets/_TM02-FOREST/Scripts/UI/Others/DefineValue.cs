@@ -6,6 +6,7 @@ public class DefineValue : MonoBehaviour
 {
     //Canvas name
     public const string CANVAS_STARTGAME = "CanvasStartGame";
+    public const string CANVAS_INVENTORY = "CanvasInventory";
     
     //Gem
     public const string GEM_SPEED = "SpeedGem";

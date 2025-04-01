@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 760776616034993183}
   - component: {fileID: 3398762917094150249}
   - component: {fileID: 7046555874632795489}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BossRound1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6136393322283441151}
   - component: {fileID: 97847791028789403}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trigger
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5838235539197125065}
   - component: {fileID: 6203776410729245197}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hit
   m_TagString: Trap
   m_Icon: {fileID: 0}

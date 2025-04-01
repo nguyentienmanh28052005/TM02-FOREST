@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3807534043691497936}
   - component: {fileID: 1971164973242643789}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6082558564999986408}
   - component: {fileID: 4451505990209098883}
   - component: {fileID: 8478246377454913608}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ShoomVer2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -231,7 +231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63dc079681fb4984dacdc95635fe6659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
 --- !u!1 &8911155788147704037
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +242,7 @@ GameObject:
   - component: {fileID: 1604220031225340294}
   - component: {fileID: 4827930986992243658}
   - component: {fileID: 4297945915144148330}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hit
   m_TagString: Enemy
   m_Icon: {fileID: 0}

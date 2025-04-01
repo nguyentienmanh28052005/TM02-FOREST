@@ -9,7 +9,7 @@ public class GameCanvasManager : Singleton<GameCanvasManager>
 {
     // [Header("Canvas Main Menu")] 
      [SerializeField] private CanvasStartGame CanvasStartGame;
-    // [SerializeField] private CanvasCredits CanvasCredits;
+     [SerializeField] private CanvasInventory CanvasInventory;
     // [SerializeField] private CanvasCardCollection CanvasCardCollection;
     //
     // [Header("Canvas Lobby")]
@@ -48,8 +48,9 @@ public class GameCanvasManager : Singleton<GameCanvasManager>
         SceneManager.sceneLoaded += OnSceneLoaded;
         
         HideChildren();
-        //StartCoroutine(AddCanvasToDict());
+        StartCoroutine(AddCanvasToDict());
     }
+    
 
     private void HideChildren()
     {
@@ -63,6 +64,8 @@ public class GameCanvasManager : Singleton<GameCanvasManager>
      {
     yield return new WaitForSeconds(0.02f);
     CanvasList.Add(DefineValue.CANVAS_STARTGAME, CanvasStartGame);
+    CanvasList.Add(DefineValue.CANVAS_INVENTORY, CanvasInventory);
+
     //     CanvasList.Add(DefineValue.CANVAS_CREDITS, CanvasCredits);
     //     CanvasList.Add(DefineValue.CANVAS_HUD, CanvasHUD);
     //     CanvasList.Add(DefineValue.CANVAS_GAME_OVER, CanvasGameOver);

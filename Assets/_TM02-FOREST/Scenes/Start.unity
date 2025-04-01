@@ -1680,7 +1680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 406083652006094377, guid: 43ab7f413e5fc334d98042435edeecb3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Round_2
+      value: SelectRound
       objectReference: {fileID: 0}
     - target: {fileID: 2406727425613448849, guid: 43ab7f413e5fc334d98042435edeecb3, type: 3}
       propertyPath: m_Pivot.x

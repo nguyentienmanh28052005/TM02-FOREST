@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class BulletMushroomController : MonoBehaviour
 {
-    [SerializeField] private Transform _playerPosi;
+    private Transform _playerPosi;
     private Rigidbody2D _rb;
     private float speed;
     private Vector2 _direction;
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _playerPosi = GameObject.FindGameObjectWithTag("Player").transform;
         _direction = _playerPosi.position - transform.position;
         _direction.Normalize();
         speed = 5f;

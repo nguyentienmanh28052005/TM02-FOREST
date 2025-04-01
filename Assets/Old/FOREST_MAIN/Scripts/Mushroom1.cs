@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Mushroom1 : MonoBehaviour
 {
-    [SerializeField] private Transform _playerPosi;
+    private Transform _playerPosi;
     [SerializeField] private GameObject _bullet;
     private float time = 0;
     private bool first = true;
-    public float rangeXL;
-    public float rangeXR;
+    private float _rangeXL;
+    private float _rangeXR;
+
+    public void Start()
+    {
+        _playerPosi = GameObject.FindGameObjectWithTag("Player").gameObject.transform;
+        _rangeXL = transform.position.x - 10f; 
+        _rangeXR = transform.position.x + 10f; 
+
+    }
+
     private void Update()
     {
-        if (_playerPosi.position.x > rangeXL && _playerPosi.position.x < rangeXR && first)
+        if (_playerPosi.position.x > _rangeXL && _playerPosi.position.x < _rangeXR && first)
         {
             GameObject bullet = Instantiate(_bullet, transform.position, transform.rotation);
             bullet.SetActive(true);
@@ -23,7 +32,7 @@ public class Mushroom1 : MonoBehaviour
             time += Time.deltaTime;
             if (time > 5)
             {
-                if (_playerPosi.position.x > rangeXL && _playerPosi.position.x < rangeXR)
+                if (_playerPosi.position.x > _rangeXL && _playerPosi.position.x < _rangeXR)
                 {
                     GameObject bullet = Instantiate(_bullet, transform.position, transform.rotation);
                     bullet.SetActive(true);

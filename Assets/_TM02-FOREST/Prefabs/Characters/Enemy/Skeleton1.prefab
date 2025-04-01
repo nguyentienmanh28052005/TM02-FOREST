@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2148399573687744433}
   - component: {fileID: 273290751203036579}
   - component: {fileID: 1847358761935331387}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Skeleton1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 1618946041679237525}
   - component: {fileID: 3441040802335923407}
   - component: {fileID: 8336620764942277616}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hit
   m_TagString: Map
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8946126546075589155}
   - component: {fileID: 2822494465476946916}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 6179830925517444482}
   - component: {fileID: 4685914034124282589}
   - component: {fileID: 7469954549965359527}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eye Monster
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -206,6 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   isFlipped: 0
+  _speed: 10
 --- !u!50 &4685914034124282589
 Rigidbody2D:
   serializedVersion: 4

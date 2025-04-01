@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4028401495266893743}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3264070331782873993}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5432288463857349814}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 183711002119281149}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 3107992097672592345}
   - component: {fileID: 805655294496670482}
   - component: {fileID: 3981518708192271573}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hole2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 807626506304396904}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Skill1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9188935131895662520}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 245051256407262560}
   - component: {fileID: 5466595802016722293}
   - component: {fileID: 1931648480440700467}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5132,7 +5132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8288714097722197516}
   - component: {fileID: 6733566689558221009}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light 2D (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5215,7 +5215,7 @@ GameObject:
   - component: {fileID: 4021539972079875030}
   - component: {fileID: 9018183782794763216}
   - component: {fileID: 8080099880831046041}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10044,7 +10044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 304735047020571663}
   - component: {fileID: 1568214428980811227}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light 2D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10125,7 +10125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7815287670048360183}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10158,7 +10158,7 @@ GameObject:
   - component: {fileID: 5573674834126256912}
   - component: {fileID: 1142871304467539226}
   - component: {fileID: 5503370267848651443}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hole4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10256,7 +10256,7 @@ GameObject:
   - component: {fileID: 4277445679559137011}
   - component: {fileID: 4804894892979108511}
   - component: {fileID: 3672631316078754172}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hole1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10352,7 +10352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6062132722360759596}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Attack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10389,7 +10389,7 @@ GameObject:
   - component: {fileID: 9087821293297474067}
   - component: {fileID: 7625218736450692345}
   - component: {fileID: 7328051848351915123}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15217,7 +15217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3853126632149004044}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15248,7 +15248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3107842208088832664}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15281,7 +15281,7 @@ GameObject:
   - component: {fileID: 3251064733423944050}
   - component: {fileID: 439237937034451960}
   - component: {fileID: 23021445390090766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hole3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15379,7 +15379,7 @@ GameObject:
   - component: {fileID: 3421957457768768109}
   - component: {fileID: 903562652396164225}
   - component: {fileID: 3907087030909408084}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20213,7 +20213,7 @@ GameObject:
   - component: {fileID: 4774145610642684129}
   - component: {fileID: 3024040216360595752}
   - component: {fileID: 5278259902126773075}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Agis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20440,7 +20440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2780421897843170257}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20477,7 +20477,7 @@ GameObject:
   - component: {fileID: 7253177245660241739}
   - component: {fileID: 4760853446142440155}
   - component: {fileID: 1314743758445908336}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dark VFX 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20582,7 +20582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 243476302635963340}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
