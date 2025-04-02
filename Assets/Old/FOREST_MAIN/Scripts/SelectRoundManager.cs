@@ -74,7 +74,6 @@ public class SelectRoundManager : MonoBehaviour
 
     public void OnSetting()
     {
-        UIController uiController = GameObject.Find("UIController").GetComponent<UIController>();
-        uiController.Pause();
+        
     }
 }

@@ -13,7 +13,13 @@ public abstract class AEnemy : Subject
     public float _speed = 1f;
     protected Rigidbody2D _rb;
     protected bool _busy = false;
+    protected DamageFlash _damageFlash;
     private static readonly int Hit = Animator.StringToHash("Hit");
+
+    protected void Awake()
+    {
+        _damageFlash = GetComponent<DamageFlash>();
+    }
 
     public void Attack()
     {
@@ -67,6 +73,7 @@ public abstract class AEnemy : Subject
 
     protected virtual void TakeDamage()
     {
+        _damageFlash.CallDamageFlash();
         _anim.SetTrigger(Hit);
         StartCoroutine(Wait());
     }
@@ -83,7 +90,7 @@ public abstract class AEnemy : Subject
         _busy = false;
     }
     
-    protected void Flip()
+    protected virtual void Flip()
     {
         Vector3 size = transform.localScale;
         size.x = -1 * size.x;

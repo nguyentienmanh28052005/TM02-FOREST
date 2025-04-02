@@ -16,7 +16,7 @@ public class Vanish_AttackState : IState
     public void Enter()
     {
         _animator.SetBool(Angry, true);
-        _controller.SetSpeed(3f);
+        _controller.SetSpeed(5f);
     }
 
     public void Execute()

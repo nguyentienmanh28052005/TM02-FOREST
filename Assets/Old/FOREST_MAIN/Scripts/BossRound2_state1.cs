@@ -55,7 +55,7 @@ public class BossRound2_state1 : StateMachineBehaviour
             }   
             else if (Numrd == 4)
             {
-                AudioManager.Instance.PlaySFX("atk3");
+                //AudioManager.Instance.PlaySFX("atk3");
                 animator.SetTrigger("atk3");
             }
             else if(Numrd == 5)

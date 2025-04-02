@@ -874,7 +874,7 @@ Transform:
   m_GameObject: {fileID: 77391223}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.5, y: 0.8, z: 537660}
+  m_LocalPosition: {x: 14.5, y: 0.8, z: 688140}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3933,18 +3933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e1adc10dffcdd4fbc26972f300e2ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cam: {fileID: 0}
-  pauseMenu: {fileID: 0}
-  setting: {fileID: 0}
-  _musicSlider: {fileID: 0}
-  _sfxSlider: {fileID: 0}
-  _fullSetting: {fileID: 0}
-  _reset: {fileID: 0}
-  _resume: {fileID: 0}
-  _quit: {fileID: 0}
-  _graphic: {fileID: 0}
-  _setting: {fileID: 0}
-  _tutorial: {fileID: 0}
 --- !u!114 &771809133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4012,6 +4000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _closeButton: {fileID: 0}
   _timeToOpenCanvas: 0
+  _cammeraCanvas: {fileID: 0}
 --- !u!1 &776385230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4300,7 +4289,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 72e74acaf937a8542b80321071e08355, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 1451b932d77c2c043bc023b7bbb98164, type: 2}
 --- !u!4 &826302204
 Transform:
   m_ObjectHideFlags: 0
@@ -8892,7 +8881,7 @@ Transform:
   m_GameObject: {fileID: 1983090114}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.5, y: 0.8, z: 537660}
+  m_LocalPosition: {x: 14.5, y: 0.8, z: 688140}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

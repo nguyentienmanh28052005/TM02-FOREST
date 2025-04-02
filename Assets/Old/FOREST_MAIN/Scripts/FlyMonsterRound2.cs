@@ -1,71 +1,41 @@
 using UnityEngine;
 
-public class FlyMonsterRound2 : MonoBehaviour
+public class FlyMonsterRound2 : AEnemy
 {
-    public Transform player;
-    public bool isFlipped = false;
-    private bool isfacingRight = true;
-    private int _horizontal = 1;
-    private Animator _anim;
-    private Rigidbody2D _rb;
-    public float _speed = 10f;
+    [SerializeField] private GameObject _right;
+    [SerializeField] private GameObject _left;
+    private bool _moveToLeft = true;
+    private GameObject _object;
 
-    private void Start()
+    public void Start()
     {
-        _anim = GetComponent<Animator>();
+        _player = GameObject.FindWithTag("Player");
+        _anim = GetComponentInChildren<Animator>();
         _rb = GetComponent<Rigidbody2D>();
+        _object = _right;
     }
 
-
-    private void Update()
+    public void Update()
     {
-        _rb.velocity = new Vector2(_horizontal, _rb.velocity.y);
-        transform.Translate(_rb.velocity * Time.deltaTime * _speed);
+        MoveInZone();
     }
 
-    public void LookAtPlayer()
+    public void MoveInZone()
     {
-        Vector3 flipped = transform.localScale;
-        flipped.z *= -1f;
-
-        if (transform.position.x > player.position.x && isFlipped)
-        {
-            transform.localScale = flipped;
-            transform.Rotate(0f, 180f, 0f);
-            isFlipped = false;
-        }
-        else if (transform.position.x < player.position.x && !isFlipped)
-        {
-            transform.localScale = flipped;
-            transform.Rotate(0f, 180f, 0f);
-            isFlipped = true;
-        }
-    }
-    
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Bound")
-        {
-            Flip();
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        
-    }
-    
-    void Flip()
-    {
-        isFlipped = !isFlipped;
-        _horizontal *= -1;
-        Vector3 kich_thuoc = transform.localScale;
-        kich_thuoc.x = -1 * kich_thuoc.x;
-        transform.localScale = kich_thuoc;
+        if(transform.position.x < _left.transform.position.x) _object = _right;
+        if (transform.position.x > _right.transform.position.x) _object = _left;
+        MoveToObject(_object);
     }
 
-    public int GetHorizontal()
+    public void MoveToPlayer()
     {
-        return _horizontal;
+        if(transform.position.x > _player.transform.position.x + 1f ||
+           transform.position.x < _player.transform.position.x - 1f)
+            MoveToObject(_player);
+    }
+
+    public void SetSpeed(float speed)
+    {
+        _speed = speed;
     }
 }

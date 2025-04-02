@@ -8777,7 +8777,7 @@ Transform:
   m_GameObject: {fileID: 128402826}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 380.8, y: -3.6200001, z: 0.9993706}
+  m_LocalPosition: {x: -88.72, y: -6.75, z: 0.9993706}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12262,7 +12262,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 283109532188493873, guid: e7c6c418c0ed44f47bef303a0834acd5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.55
+      value: -1.93
       objectReference: {fileID: 0}
     - target: {fileID: 990388083402776560, guid: e7c6c418c0ed44f47bef303a0834acd5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -126132,7 +126132,7 @@ Transform:
   m_GameObject: {fileID: 1048303740}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.091408, y: 1.8173661, z: 0.24501099}
+  m_LocalPosition: {x: 47.93, y: 1.87, z: 0.24501099}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -166061,11 +166061,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2711996633011743919, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 380.8
+      value: -88.72
       objectReference: {fileID: 0}
     - target: {fileID: 2711996633011743919, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.42
+      value: -10.55
       objectReference: {fileID: 0}
     - target: {fileID: 2711996633011743919, guid: 7c6dd9fce1f3b7e4f85552abb64065f0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -283088,7 +283088,7 @@ Transform:
   m_GameObject: {fileID: 1557677286}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 380.8, y: -3.6200001, z: 0.9993706}
+  m_LocalPosition: {x: -78.78283, y: -6.7930098, z: 0.9993706}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

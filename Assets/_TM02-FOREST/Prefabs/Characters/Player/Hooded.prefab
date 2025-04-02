@@ -15067,6 +15067,7 @@ GameObject:
   - component: {fileID: 816197144163569805}
   - component: {fileID: 4375704218479943075}
   - component: {fileID: 5245824981519700604}
+  - component: {fileID: 4614736233674301988}
   m_Layer: 11
   m_Name: Hooded
   m_TagString: Player
@@ -15118,8 +15119,8 @@ MonoBehaviour:
   fallGravityScale: 0.3
   _particleJump: {fileID: 5732960697627366350}
   timeParticleJump: 0.2
-  dashingPower: 30
-  dashingTime: 0.15
+  dashingPower: 20
+  dashingTime: 0.18
   dashingCooldown: 0.28
   tr: {fileID: 3472689609535216183}
   _particleDash: {fileID: 452866185622125325}
@@ -15306,7 +15307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed959a427c07f0b4c969d033430066ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healthBar: {fileID: 0}
 --- !u!114 &816197144163569805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15451,6 +15451,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _flashColor: {r: 1, g: 1, b: 1, a: 1}
   _flashTime: 0.25
+--- !u!114 &4614736233674301988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5681138666637538112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e7e021cd2dcde4c8627fa92ce56e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6934557076068693662
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class CanvasBase : MonoBehaviour
     [Header("Default variables")]
     [SerializeField] private Button _closeButton;
     [SerializeField] private float _timeToOpenCanvas = 0f;
+    [SerializeField] private GameObject _cammeraCanvas;
 
     public virtual void Awake()
     {
@@ -17,9 +18,9 @@ public class CanvasBase : MonoBehaviour
     }
 
     public virtual void Show(object data = null)
-        
     {
         //Start some show up animation
+        _cammeraCanvas.SetActive(true);
         transform.localScale = Vector3.one * 0.2f;
         transform.DOScale(1, _timeToOpenCanvas);
         
@@ -28,6 +29,7 @@ public class CanvasBase : MonoBehaviour
 
     public virtual void Hide()
     {
+        _cammeraCanvas.SetActive(false);
         gameObject.SetActive(false);
     }
 }
