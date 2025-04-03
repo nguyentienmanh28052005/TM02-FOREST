@@ -35,6 +35,8 @@ public class Vanish : AEnemy
 
     public void MoveToPlayer()
     {
+        if(transform.position.x > _player.transform.position.x + 1f ||
+                   transform.position.x < _player.transform.position.x - 1f)
         MoveToObject(_player);
     }
 

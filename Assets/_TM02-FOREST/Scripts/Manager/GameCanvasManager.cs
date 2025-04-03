@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameCanvasManager : Singleton<GameCanvasManager>
 {
     // [Header("Canvas Main Menu")] 
-     [SerializeField] private CanvasStartGame CanvasStartGame;
+     //[SerializeField] private CanvasStartGame CanvasStartGame;
      [SerializeField] private CanvasInventory CanvasInventory;
     // [SerializeField] private CanvasCardCollection CanvasCardCollection;
     //
@@ -63,7 +63,7 @@ public class GameCanvasManager : Singleton<GameCanvasManager>
     IEnumerator AddCanvasToDict()
      {
     yield return new WaitForSeconds(0.02f);
-    CanvasList.Add(DefineValue.CANVAS_STARTGAME, CanvasStartGame);
+    //CanvasList.Add(DefineValue.CANVAS_STARTGAME, CanvasStartGame);
     CanvasList.Add(DefineValue.CANVAS_INVENTORY, CanvasInventory);
 
     //     CanvasList.Add(DefineValue.CANVAS_CREDITS, CanvasCredits);

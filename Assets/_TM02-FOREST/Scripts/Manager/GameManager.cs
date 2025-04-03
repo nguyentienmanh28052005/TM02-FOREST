@@ -15,6 +15,18 @@ public class GameManager : Singleton<GameManager>
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
-            GameCanvasManager.Instance.CanvasList[DefineValue.CANVAS_INVENTORY].Show();
+           OpenCanvas(DefineValue.CANVAS_INVENTORY);
+    }
+    
+    public void OpenCanvas(string a)
+    {
+        if (GameCanvasManager.Instance.CanvasList.ContainsKey(a))
+        {
+            GameCanvasManager.Instance.CanvasList[a].Show();
+        }
+        else
+        {
+            Debug.LogError("UIError: Canvas not found: " + a);
+        }
     }
 }

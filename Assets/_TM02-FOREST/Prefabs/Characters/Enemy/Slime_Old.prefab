@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 273742125535616020}
   - component: {fileID: 4885974750348835946}
   - component: {fileID: 7422662211393555452}
+  - component: {fileID: 236740755882226934}
   m_Layer: 10
   m_Name: Slime_Old
   m_TagString: Enemy
@@ -31,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3856341422655178103}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 18.5, y: -1.9000001, z: 9.969371}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.21, y: 0.2}
+  m_Size: {x: 1.3125, y: 1.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -176,7 +177,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.3125, y: 1.25}
-    newSize: {x: 0.21, y: 0.2}
+    newSize: {x: 1.3125, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -196,11 +197,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35e11eba06d1b640a76a846277d0ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  isFlipped: 0
-  rangeXR: -56
-  rangeXL: -77
-  rangeY: 0
+  _player: {fileID: 0}
+  _speed: 1
+  _stateManager: {fileID: 0}
+  _right: {fileID: 0}
+  _left: {fileID: 0}
 --- !u!114 &4885974750348835946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +209,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3856341422655178103}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8e4555843c45b640bf517eb31b8041c, type: 3}
   m_Name: 
@@ -228,6 +229,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _flashColor: {r: 1, g: 1, b: 1, a: 1}
   _flashTime: 0.25
+--- !u!114 &236740755882226934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3856341422655178103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b87e9fd02ef24438ab0b97072e77be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9037393117264086083
 GameObject:
   m_ObjectHideFlags: 0
