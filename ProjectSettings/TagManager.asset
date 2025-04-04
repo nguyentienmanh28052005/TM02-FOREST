@@ -63,9 +63,6 @@ TagManager:
   - name: BackGround
     uniqueID: 3139503039
     locked: 0
-  - name: Player
-    uniqueID: 447286529
-    locked: 0
   - name: Canvas
     uniqueID: 3407990351
     locked: 0
@@ -80,6 +77,9 @@ TagManager:
     locked: 0
   - name: Sun
     uniqueID: 4122761855
+    locked: 0
+  - name: Player
+    uniqueID: 447286529
     locked: 0
   - name: Canvas2
     uniqueID: 327155451

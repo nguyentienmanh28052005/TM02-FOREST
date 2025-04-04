@@ -9,6 +9,7 @@ using UnityEngine;
     {
         OnGameStart,
         OnRound1,
+        OnRound2,
         
         /// <summary>
         /// When the game is over

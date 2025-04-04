@@ -15,6 +15,7 @@ public class AudioManager : Singleton<AudioManager>, IMessageHandle
     public AudioClip _musicGamePlay;
     public AudioClip _musicRound1;
     public AudioClip _musicRainRound1;
+    public AudioClip _musicRound2;
 
 
     [Header("SFX Clips")] 
@@ -67,6 +68,8 @@ public class AudioManager : Singleton<AudioManager>, IMessageHandle
         MessageManager.Instance.AddSubcriber(ManhMessageType.OnEnemyDie, this);
         MessageManager.Instance.AddSubcriber(ManhMessageType.OnHitEnemy, this);
         MessageManager.Instance.AddSubcriber(ManhMessageType.OnRound1, this);
+        MessageManager.Instance.AddSubcriber(ManhMessageType.OnRound2, this);
+
     }
 
     private void OnDisable()
@@ -77,6 +80,8 @@ public class AudioManager : Singleton<AudioManager>, IMessageHandle
         MessageManager.Instance.RemoveSubcriber(ManhMessageType.OnEnemyDie, this);
         MessageManager.Instance.RemoveSubcriber(ManhMessageType.OnHitEnemy, this);
         MessageManager.Instance.RemoveSubcriber(ManhMessageType.OnRound1, this);
+        MessageManager.Instance.RemoveSubcriber(ManhMessageType.OnRound2, this);
+
 
 
     }
@@ -168,6 +173,9 @@ public class AudioManager : Singleton<AudioManager>, IMessageHandle
                 break;
             case ManhMessageType.OnRound1:
                 PlayMusic(_musicRainRound1, true);
+                break;
+            case ManhMessageType.OnRound2:
+                PlayMusic(_musicRound2, true);
                 break;
             //SFX
             case ManhMessageType.OnGameLose:

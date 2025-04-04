@@ -95,7 +95,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1321641935
   m_SortingLayer: 4
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bff51ad50910390449d56e2c149a926a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 7606178818279700425}
   - component: {fileID: 516915590415274481}
   - component: {fileID: 4366647443862080979}
+  - component: {fileID: 3990735887980233607}
   m_Layer: 10
   m_Name: Skull
   m_TagString: Enemy
@@ -313,3 +314,17 @@ CircleCollider2D:
   m_Offset: {x: 0.21637726, y: -0.063640594}
   serializedVersion: 2
   m_Radius: 0.65273666
+--- !u!114 &3990735887980233607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7346988574237170611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c73dca777897984392dd1eecdcee117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flashColor: {r: 1, g: 1, b: 1, a: 1}
+  _flashTime: 0.25

@@ -12,6 +12,9 @@ public class CanvasSelectRound : CanvasBase
             case "Round_1":
                 MessageManager.Instance.SendMessage(new Message(ManhMessageType.OnRound1));
                 break;
+            case "Round_2":
+                MessageManager.Instance.SendMessage(new Message(ManhMessageType.OnRound2));
+                break;
         }
         SceneController.Instance.LoadScene(_nameScene);
     }

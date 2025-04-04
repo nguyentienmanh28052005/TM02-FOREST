@@ -390,6 +390,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 169a35c065bf76a4ba4a653824faa9fa, type: 3}
     - target: {fileID: 3786697993584179872, guid: 6dc3f2a538c98064d845063f3ccca6f6, type: 3}
+      propertyPath: _musicRound2
+      value: 
+      objectReference: {fileID: 8300000, guid: 9fd9b51b7b0f1cd4b871457464eda96e, type: 3}
+    - target: {fileID: 3786697993584179872, guid: 6dc3f2a538c98064d845063f3ccca6f6, type: 3}
       propertyPath: _musicSource
       value: 
       objectReference: {fileID: 1483416740}
