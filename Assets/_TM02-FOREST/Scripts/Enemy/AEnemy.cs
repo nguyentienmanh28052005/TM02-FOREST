@@ -7,6 +7,7 @@ using UnityEngine;
 public abstract class AEnemy : Subject
 {
     [SerializeField] protected GameObject _player;
+    public float _health;
     protected bool _isFacingRight = true;
     protected Animator _anim;
     protected int _horizontal = 1;
@@ -19,6 +20,11 @@ public abstract class AEnemy : Subject
     protected void Awake()
     {
         _damageFlash = GetComponent<DamageFlash>();
+    }
+
+    protected virtual void Update()
+    {
+        if (_health <= 0) StartCoroutine(Death(0.5f));
     }
 
     public void Attack()
@@ -73,6 +79,7 @@ public abstract class AEnemy : Subject
 
     protected virtual void TakeDamage()
     {
+        _health -= 10f;
         _damageFlash.CallDamageFlash();
         _anim.SetTrigger(Hit);
         StartCoroutine(Wait());

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,16 @@ using UnityEngine;
 public class Hole : MonoBehaviour
 {
     private string _currentPosition = "Origin";
+    [SerializeField] private GameObject _prefab;
+    private Pendulum _pendulum;
+    [SerializeField] private GameObject _rotationBullet;
 
+    private void Start()
+    {
+        _pendulum = GetComponentInChildren<Pendulum>();
+        _pendulum.moveSpeed = 0f;
+    }
+    
     public void MoveToAttack1Position(GameObject _gameObject)
     {
         transform.position =
@@ -27,5 +37,12 @@ public class Hole : MonoBehaviour
     public string GetCurrentPosition()
     {
         return _currentPosition;
+    }
+
+    public void SpawnBullet()
+    {
+        _pendulum.moveSpeed = 100;
+        Debug.Log("hi");
+        Instantiate(_prefab, _rotationBullet.transform.position, _rotationBullet.transform.rotation);
     }
 }

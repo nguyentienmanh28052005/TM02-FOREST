@@ -20,8 +20,9 @@ public class Slime : AEnemy
         _stateManager.ChangeState(new Slime_MoveState(this, _anim));
     }
 
-    public void Update()
+    protected virtual void Update()
     {
+        base.Update();
         if(_player.transform.position.x < _right.transform.position.x && _player.transform.position.x > _left.transform.position.x)
             _stateManager.ChangeState(new Slime_AttackState(this, _anim));
         else _stateManager.ChangeState(new Slime_MoveState(this, _anim));

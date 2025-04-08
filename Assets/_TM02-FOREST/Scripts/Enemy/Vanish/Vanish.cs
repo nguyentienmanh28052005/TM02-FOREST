@@ -19,8 +19,9 @@ public class Vanish : AEnemy
         _stateManager.ChangeState(new Vanish_MoveState(this, _anim));
     }
 
-    public void Update()
+    protected override void Update()
     {
+        base.Update();
         if(_player.transform.position.x < _right.transform.position.x && _player.transform.position.x > _left.transform.position.x)
             _stateManager.ChangeState(new Vanish_AttackState(this, _anim));
         else _stateManager.ChangeState(new Vanish_MoveState(this, _anim));

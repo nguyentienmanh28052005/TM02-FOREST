@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using CitrioN.SettingsMenuCreator;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -26,30 +27,19 @@ public class Agis_Manager : AEnemy
         _player = GameObject.FindGameObjectWithTag("Player");
         _stateManager = GetComponent<StateManager>();
         _rb = GetComponent<Rigidbody2D>();  
-    }
-
-    public void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.R)) Attack1();
-        if (Input.GetKeyDown(KeyCode.T)) Attack2();
+        Attack1(30f);
     }
     
     //Attack 1
-    public void Attack1()
+    public void Attack1(float time)
     {
         _stateManager.ChangeState(new Agis_Attack1State(this, _animator));
-        StartCoroutine(WaitExitAttack1());
+        StartCoroutine(WaitExitAttack1(time));
     }
     
     public void SpawnSkull()
     {
         if (!_busy) StartCoroutine(Spawn());
-    }
-    
-    private IEnumerator WaitExitAttack1()
-    {
-        yield return new WaitForSeconds(10f);
-        _stateManager.ChangeState(new Agis_OriginalState(this, _animator));
     }
 
     private IEnumerator Spawn()
@@ -79,12 +69,20 @@ public class Agis_Manager : AEnemy
         if(_holes[3].GetCurrentPosition() == "Origin") _holes[3].MoveToAttack1Position(_attack1AttackPositions[3]);
     }
     
-    //Attack 2
+    private IEnumerator WaitExitAttack1(float time)
+    {
+        yield return new WaitForSeconds(time);
+        _stateManager.ChangeState(new Agis_OriginalState(this, _animator));
+        yield return new WaitForSeconds(10f);
+        Attack3(30f);
 
-    public void Attack2()
+    }
+    
+    //Attack 2
+    public void Attack2(float time)
     {
         _stateManager.ChangeState(new Agis_Attack2State(this, _animator));
-        StartCoroutine(WaitExitAttack2());
+        StartCoroutine(WaitExitAttack2(time));
     }
     public void Attack2MoveAndSpawnBullet()
     {
@@ -144,10 +142,37 @@ public class Agis_Manager : AEnemy
         else _rb.velocity = new Vector2(0f, 0f);
     }
 
-    private IEnumerator WaitExitAttack2()
+    private IEnumerator WaitExitAttack2(float time)
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(time);
         _stateManager.ChangeState(new Agis_OriginalState(this, _animator));
+    }
+    
+    //Attack 3 
+    public void Attack3(float time)
+    {
+        _stateManager.ChangeState(new Agis_Attack3State(this, _animator));
+        StartCoroutine(WaitExitAttack3(time));
+    }
+    public void Attack3Update(int bullet)
+    {
+        if (!_busy) StartCoroutine(SpawnBulletAttack3(bullet));
+    }
+    
+    private IEnumerator SpawnBulletAttack3(int _bullet)
+    {
+        _busy = true;
+        yield return new WaitForSeconds(0.3f);
+        _holes[_bullet].SpawnBullet();
+        _busy = false;
+    }
+    
+    private IEnumerator WaitExitAttack3(float time)
+    {
+        yield return new WaitForSeconds(time);
+        _stateManager.ChangeState(new Agis_OriginalState(this, _animator));
+        yield return new WaitForSeconds(10f);
+        Attack2(30f);
     }
     
     //Move

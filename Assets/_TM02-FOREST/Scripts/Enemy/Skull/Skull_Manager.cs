@@ -16,7 +16,7 @@ public class Skull_Manager : AEnemy
         _rb = GetComponent<Rigidbody2D>();
 
     }
-    public void Update()
+    protected override void Update()
     {
         if(!_busy) MoveToObject2D(_player);
     }

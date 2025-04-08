@@ -160,6 +160,10 @@ PrefabInstance:
       propertyPath: _speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4975998773662688454, guid: e744d7d1b19b2b74386933b8c0aa9a11, type: 3}
+      propertyPath: _health
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5160964457399322659, guid: e744d7d1b19b2b74386933b8c0aa9a11, type: 3}
       propertyPath: m_Intensity
       value: 1.18
