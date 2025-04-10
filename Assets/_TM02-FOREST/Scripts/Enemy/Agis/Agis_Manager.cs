@@ -30,6 +30,11 @@ public class Agis_Manager : AEnemy
         Attack1(30f);
     }
     
+    // protected override void Update()
+    // {
+    //     if(Input.GetKeyDown(KeyCode.E)) Attack2(20f);
+    // }
+    
     //Attack 1
     public void Attack1(float time)
     {
@@ -173,6 +178,22 @@ public class Agis_Manager : AEnemy
         _stateManager.ChangeState(new Agis_OriginalState(this, _animator));
         yield return new WaitForSeconds(10f);
         Attack2(30f);
+    }
+
+    public void SetHolesKinematic()
+    {
+        _holes[0].GetComponentInChildren<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        _holes[1].GetComponentInChildren<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        _holes[2].GetComponentInChildren<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        _holes[3].GetComponentInChildren<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+    }
+    
+    public void SetHolesDynamic()
+    {
+        _holes[0].GetComponentInChildren<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        _holes[1].GetComponentInChildren<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        _holes[2].GetComponentInChildren<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        _holes[3].GetComponentInChildren<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
     }
     
     //Move

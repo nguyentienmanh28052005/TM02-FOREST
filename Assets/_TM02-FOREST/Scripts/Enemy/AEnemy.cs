@@ -8,7 +8,7 @@ public abstract class AEnemy : Subject
 {
     [SerializeField] protected GameObject _player;
     public float _health;
-    protected bool _isFacingRight = true;
+    public bool _isFacingRight = true;
     protected Animator _anim;
     protected int _horizontal = 1;
     public float _speed = 1f;

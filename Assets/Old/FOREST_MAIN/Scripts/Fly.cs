@@ -52,7 +52,7 @@ public class Fly : MonoBehaviour
 
     private void ResetPosi()
     {
-        transform.position = new Vector3(_posiCam.position.x + 30f, _posiCam.position.y + 5f, 5f);
+        transform.position = new Vector3(_posiCam.position.x + 30f, _posiCam.position.y + 5f, 0f);
     }
 
     private void OnTriggerExit2D(Collider2D other)

@@ -13,7 +13,7 @@ public class Hole : MonoBehaviour
     private void Start()
     {
         _pendulum = GetComponentInChildren<Pendulum>();
-        _pendulum.moveSpeed = 0f;
+        //_pendulum.moveSpeed = 0f;
     }
     
     public void MoveToAttack1Position(GameObject _gameObject)
@@ -42,7 +42,6 @@ public class Hole : MonoBehaviour
     public void SpawnBullet()
     {
         _pendulum.moveSpeed = 100;
-        Debug.Log("hi");
         Instantiate(_prefab, _rotationBullet.transform.position, _rotationBullet.transform.rotation);
     }
 }

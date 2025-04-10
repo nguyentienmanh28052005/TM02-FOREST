@@ -15,7 +15,7 @@ public class Agis_Attack2State : IState
     
     public void Enter()
     {
-        
+        _manager.SetHolesKinematic();
     }
 
     public void Execute()
@@ -25,5 +25,6 @@ public class Agis_Attack2State : IState
 
     public void Exit()
     {
+        _manager.SetHolesDynamic();
     }
 }

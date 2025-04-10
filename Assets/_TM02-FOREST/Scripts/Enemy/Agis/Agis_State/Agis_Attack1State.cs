@@ -15,6 +15,7 @@ public class Agis_Attack1State : IState
     
     public void Enter()
     {
+        _manager.SetHolesKinematic();
     }
 
     public void Execute()
@@ -25,6 +26,7 @@ public class Agis_Attack1State : IState
 
     public void Exit()
     {
+        _manager.SetHolesDynamic();
         _manager.SetOriginalPositionAttack1();
     }
 }
