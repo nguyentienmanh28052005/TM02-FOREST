@@ -43,7 +43,7 @@ public class BossCrystal_Manager : AEnemy
     [SerializeField] private Transform _point2;
     private static readonly int Jump1 = Animator.StringToHash("Jump");
     private static readonly int Fall1 = Animator.StringToHash("Fall");
-    private static readonly int Attack4 = Animator.StringToHash("Attack3");
+    private static readonly int Anim_Attack4 = Animator.StringToHash("Attack3");
     private static readonly int Attack5 = Animator.StringToHash("Attack4");
     private static readonly int AttackAir = Animator.StringToHash("AttackAir");
     private static readonly int Speed = Animator.StringToHash("Speed");
@@ -59,10 +59,12 @@ public class BossCrystal_Manager : AEnemy
 
     public void Update()
     {
+        if (_isFacingRight) _horizontal = 1;
+        else _horizontal = -1;
         isGround = isGrounded();
         _anim.SetFloat(Speed, _speed);
         Fall();
-        if (Input.GetKeyDown(KeyCode.B)) StartCoroutine(Attack4Test());
+        if (Input.GetKeyDown(KeyCode.B)) StartCoroutine(Attack4());
     }
     
     public void InstanceBullet()
@@ -120,20 +122,20 @@ public class BossCrystal_Manager : AEnemy
     {
         LookAtObject(_player);
         _busy = true;
-        _anim.SetTrigger(Attack4);
+        _anim.SetTrigger(Anim_Attack4);
         LookAtObject(_player);
         yield return new WaitForSeconds(1.2f);
         _busy = false;
     }
 
-    public IEnumerator Attack4Test()
+    public IEnumerator Attack4()
     {
         _busy = true;
         Jump();
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
         _rb.constraints = RigidbodyConstraints2D.FreezeAll;
         StartCoroutine(_dissolve.Vanis(false, true));
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.6f);
         transform.position = _point1.transform.position;
         _speed = 0f;
         LookAtObject(_player);
@@ -143,6 +145,7 @@ public class BossCrystal_Manager : AEnemy
         _anim.SetTrigger(Attack5);
         _rb.constraints = RigidbodyConstraints2D.None;
         _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        _busy = false;
     }
 
     public void ConstraintsFreezeAll()
@@ -154,11 +157,12 @@ public class BossCrystal_Manager : AEnemy
     {
         //canAttack = false;
         //jumpHeight = 0.25f;
+        _cameraShake.ShakeCamera(5f);
         _anim.SetBool(Jump1, true);
         _rb.gravityScale = gravityScale;
         float jumpForce = Mathf.Sqrt(jumpHeight * (Physics2D.gravity.y * _rb.gravityScale) * -2) * _rb.mass;
         _rb.velocity = new Vector2(0f, 0f);
-        _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        _rb.AddForce(new Vector2(_horizontal/3f,1.1f) * jumpForce, ForceMode2D.Impulse);
         if(_rb.velocity.y > 0) _rb.gravityScale = gravityScale;
         else _rb.gravityScale = fallGravityScale;
         if (_rb.velocity.y < -2f) _rb.velocity = new Vector2(_rb.velocity.x, -2f);

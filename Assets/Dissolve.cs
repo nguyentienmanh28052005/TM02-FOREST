@@ -32,12 +32,12 @@ public class Dissolve : MonoBehaviour
     bool n=true;
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A)){
-            StartCoroutine(Vanis(false, true));
-        }
-        if(Input.GetKeyDown(KeyCode.D)){
-            StartCoroutine(Appear(false, true));
-        }
+        // if(Input.GetKeyDown(KeyCode.A)){
+        //     StartCoroutine(Vanis(false, true));
+        // }
+        // if(Input.GetKeyDown(KeyCode.D)){
+        //     StartCoroutine(Appear(false, true));
+        // }
         // if(n)
         // {
         //     StartCoroutine(Appear(true, false));n=false;
