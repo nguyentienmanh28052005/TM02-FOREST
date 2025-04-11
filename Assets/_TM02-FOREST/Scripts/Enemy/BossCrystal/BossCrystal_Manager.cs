@@ -36,6 +36,8 @@ public class BossCrystal_Manager : AEnemy
     [SerializeField] private GameObject _firePos;
     [SerializeField] GameObject _bullet;
 
+    private Dissolve _dissolve;
+    
     [Header("Zone")] 
     [SerializeField] private Transform _point1;
     [SerializeField] private Transform _point2;
@@ -52,6 +54,7 @@ public class BossCrystal_Manager : AEnemy
         _stateManager = GetComponent<StateManager>();
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
+        _dissolve = GetComponentInChildren<Dissolve>();
     }
 
     public void Update()
@@ -59,6 +62,7 @@ public class BossCrystal_Manager : AEnemy
         isGround = isGrounded();
         _anim.SetFloat(Speed, _speed);
         Fall();
+        if (Input.GetKeyDown(KeyCode.B)) StartCoroutine(Attack4Test());
     }
     
     public void InstanceBullet()
@@ -120,6 +124,30 @@ public class BossCrystal_Manager : AEnemy
         LookAtObject(_player);
         yield return new WaitForSeconds(1.2f);
         _busy = false;
+    }
+
+    public IEnumerator Attack4Test()
+    {
+        _busy = true;
+        Jump();
+        yield return new WaitForSeconds(0.6f);
+        _rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        StartCoroutine(_dissolve.Vanis(false, true));
+        yield return new WaitForSeconds(0.5f);
+        transform.position = _point1.transform.position;
+        _speed = 0f;
+        LookAtObject(_player);
+        _anim.SetBool(Jump1, false);
+        StartCoroutine(_dissolve.Appear(false, true));
+        yield return new WaitForSeconds(0.2f);
+        _anim.SetTrigger(Attack5);
+        _rb.constraints = RigidbodyConstraints2D.None;
+        _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+    }
+
+    public void ConstraintsFreezeAll()
+    {
+        _rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }
     
     public void Jump()

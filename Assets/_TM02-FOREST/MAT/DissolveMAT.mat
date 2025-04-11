@@ -19,7 +19,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: _SpiralStrength
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -41,13 +41,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DissolveAmount: 0.51
+    - _DissolveAmount: 0
     - _DissolveScale: 75
     - _OutlineThinkness: 0.005
     - _SpiralStrength: 0
-    - _VerticalDissolve: 0.03
+    - _VerticalDissolve: 0
     m_Colors:
-    - _OutlineColor: {r: 0, g: 1244.9331, b: 1700.984, a: 1}
+    - _OutlineColor: {r: 0, g: 311.23328, b: 425.246, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2324522349708729470
 MonoBehaviour:
