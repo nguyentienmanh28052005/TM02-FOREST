@@ -63,7 +63,7 @@ public class BossCrystal_Manager : AEnemy
         else _horizontal = -1;
         isGround = isGrounded();
         _anim.SetFloat(Speed, _speed);
-        Fall();
+        //Fall();
         if (Input.GetKeyDown(KeyCode.B)) StartCoroutine(Attack4());
     }
     
